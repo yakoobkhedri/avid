@@ -50,6 +50,9 @@ a {
 a:hover {
     color: #156860;
 }
+#nav ul a:hover{
+    color: #156860!important;
+}
 
 /* banner */
 #banner {
@@ -94,11 +97,11 @@ a:hover {
     color: #125D56;
 }
 
-#footer a svg path {
+#footer a svg path,.socials a:hover svg path {
     transition: all .4s;
 }
 
-#footer a:hover svg path {
+#footer a:hover svg path,.socials a:hover svg path {
     fill: #125D56;
 }
 
@@ -148,11 +151,18 @@ a:hover {
 .fs-20 {
     font-size: 20px;
 }
-
+.fs-30 {
+    font-size: 30px;
+}
 .fs-36 {
     font-size: 36px;
 }
-
+.fs-40 {
+    font-size: 40px;
+}
+.fs-48 {
+    font-size: 48px;
+}
 .fs-60 {
     font-size: 60px !important;
 }
