@@ -1,9 +1,23 @@
+@font-face{
+    font-family: 'pelak-Regular';
+    font-weight:400;
+    src: url('../fonts/woff/PelakFA-Regular.woff') format('woff');
+}
+@font-face{
+    font-family: 'pelak-Bold';
+    src: url('../fonts/woff/PelakFA-Bold.woff') format('woff');
+}
+body{
+    font-family: 'pelak-Regular';
+}
 a {
     text-decoration: none;
     cursor: pointer;
 }
-
-#navbar {
+.fw-bold{
+    font-family: 'pelak-Bold';
+}
+#navbar,#navbar2 {
     position: fixed;
     padding: 20px;
     right: 0;
@@ -13,7 +27,7 @@ a {
     transition-duration: 0.5s;
 }
 
-#logo a {
+#logo a,#navbar ul li a.link2 {
     color: white;
 }
 
@@ -53,7 +67,9 @@ a:hover {
 #nav ul a:hover{
     color: #156860!important;
 }
-
+#navbar ul li a.link{
+    color: #475467;
+}
 /* banner */
 #banner {
     background-image: url('../images/banner/image\ 92.png');
@@ -176,6 +192,12 @@ a:hover {
 .w-24 {
     width: 24px;
 }
+.w-40 {
+    width: 40px;
+}
+.w-48 {
+    width: 48px;
+}
 .w-111 {
     width: 111px;
 }
@@ -187,13 +209,21 @@ a:hover {
 .h-24 {
     height: 24px;
 }
+.h-40 {
+    height: 40px;
+}
+.h-48 {
+    height: 48px;
+}
 .h-68 {
     height: 68px;
 }
 .h-100vh {
     height: 100vh;
 }
-
+.h-142 {
+    height: 142px;
+}
 /* padding */
 .pr-custom {
     padding-right: calc((100% - 1298px) / 2);
@@ -211,7 +241,31 @@ a:hover {
 .text-gray2 {
     color: #344054;
 }
-
+.text-red{
+    color: #B42318;
+}
+/* resize */
+.resize-none{
+    resize: none;
+}
+/* border */
+.border-red{
+    border: 1px solid #B42318;
+}
+/* after */
+.afterLine{
+ position: relative;
+}
+.afterLine::after{
+    content: '';
+    position: absolute;
+    background-color: #EAECF0;
+    border-radius: 2px;
+    width: 2px;
+    height: 40px;
+    right: 50%;
+    top: 43px;
+}
 /* background */
 .bg-green {
     background-color: #2D7B6B;
@@ -233,7 +287,9 @@ a:hover {
 .shadow-2 {
     box-shadow: 0px 1px 2px 0px #1018280D;
 }
-
+.shadow-3{
+    box-shadow: 0px 0px 0px 4px #DEEEEB;
+}
 /* border radius */
 .rounded-8 {
     border-radius: 8px;
@@ -290,6 +346,13 @@ a:hover {
   .btnHover:hover::before {
     animation: shine 1.5s ease-out infinite;
   }
+  /* pagination */
+  .pagination > div:nth-child(2) p{
+   transition: all .4s;
+  }
+  .pagination > div:nth-child(2) p:hover{
+    background-color: #F9FAFB;
+  }
   @keyframes shine {
     0% {
       left: -100px;
@@ -324,7 +387,7 @@ a:hover {
         float: right;
     }
 
-    #navbar {
+    #navbar,#navbar2 {
         display: flex;
         align-items: center;
     }

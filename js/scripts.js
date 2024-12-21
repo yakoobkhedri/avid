@@ -55,9 +55,18 @@ $('#toggler').on('click', function () {
 $(window).on('scroll load', function () {
     if ($(window).scrollTop() > 120) {
         $('#navbar').css('background-color', 'rgba(20 , 40 , 60 , 0.7)').css('padding', '15px');
+        $('a.link').css('color', 'white');
     } else {
         $('#navbar').css('background-color', 'rgba(0 , 0 , 0 , 0)').css('padding', '20px');
+        $('a.link').css('color', '#475467');
     }
+    if ($(window).scrollTop() > 120) {
+      $('#navbar2').css('background-color', 'rgba(20 , 40 , 60 , 0.7)').css('padding', '15px');
+      $('a.link2').css('color', 'white');
+  } else {
+      $('#navbar2').css('background-color', 'rgba(0 , 0 , 0 , 0)').css('padding', '20px');
+      $('a.link2').css('color', 'white');
+  }
 
     if ($(window).scrollTop() > 250) {
         $('#go-to-top').css('opacity','1').css('visibility','visible');
