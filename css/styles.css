@@ -9,6 +9,7 @@
 }
 body{
     font-family: 'pelak-Regular';
+    user-select: none;
 }
 a {
     text-decoration: none;
@@ -142,6 +143,10 @@ a:hover {
 }
 
 /* max-width */
+.max-w-720 {
+    max-width: 720px;
+    width: 100%;
+}
 .max-w-768 {
     max-width: 768px;
     width: 100%;
@@ -166,6 +171,9 @@ a:hover {
 
 .fs-20 {
     font-size: 20px;
+}
+.fs-24 {
+    font-size: 24px;
 }
 .fs-30 {
     font-size: 30px;
@@ -244,6 +252,10 @@ a:hover {
 .text-red{
     color: #B42318;
 }
+/* left */
+.left-60{
+    left: 60px;
+}
 /* resize */
 .resize-none{
     resize: none;
@@ -274,7 +286,9 @@ a:hover {
 .bg-green2 {
     background-color: #F0FDF9;
 }
-
+.bg-green3{
+    background-color: #F9FAFB;
+}
 .bg-gray {
     background-color: #F9FAFB;
 }
