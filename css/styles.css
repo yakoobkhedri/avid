@@ -136,6 +136,7 @@ a:hover {
     text-align: center;
     line-height: 2.8em;
     transition-duration: 0.5s;
+    z-index: 99;
 }
 
 #go-to-top:hover {
@@ -210,6 +211,9 @@ a:hover {
 .w-48 {
     width: 48px;
 }
+.w-56 {
+    width: 56px !important;
+}
 .w-111 {
     width: 111px;
 }
@@ -232,6 +236,9 @@ a:hover {
 }
 .h-48 {
     height: 48px;
+}
+.h-56 {
+    height: 56px !important;
 }
 .h-68 {
     height: 68px;
@@ -331,6 +338,9 @@ a:hover {
     box-shadow: 0px 0px 0px 4px #DEEEEB;
 }
 /* border radius */
+.rounded-6 {
+    border-radius: 6px;
+}
 .rounded-8 {
     border-radius: 8px;
 }
@@ -405,6 +415,36 @@ a:hover {
     to {
       left: 100%;
     }
+  }
+  /* tab */
+.tabContent > div > div{
+    display: none;
+  }
+  .tabContent > div > div.active{
+    display: block;
+  }
+  .tab{
+    transition: all .4s;
+  }
+  .tab.active, .tab:hover{
+    background-color: #F9FAFB;
+  }
+  /* swiper */
+  .swiper-button-next::after{
+    content: url('../images/arrow-right.png') !important;
+    height: 100%;
+  }
+  .swiper-button-prev::after{
+    content: url('../images/arrow-left.png') !important;
+    height: 100%;
+  }
+  .swiper-button-prev{
+    right: 85px!important;
+  }
+  .swiper-button-prev, .swiper-button-next{
+      bottom: -88px !important;
+      top: auto !important;
+      background-color: white;
   }
   /* responsive */
 @media (min-width: 1200px) {
