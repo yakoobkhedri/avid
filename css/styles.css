@@ -97,7 +97,7 @@ a:hover {
 #nav ul a{
     font-family: 'pelak-Medium';
 }
-#nav ul a:hover{
+#nav ul a:hover,#nav ul a.active{
     color: #156860!important;
     font-family: 'pelak-ExtraBold';
 }
