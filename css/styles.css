@@ -4,8 +4,29 @@
     src: url('../fonts/woff/PelakFA-Regular.woff') format('woff');
 }
 @font-face{
+    font-family: 'pelak-Medium';
+    font-weight: 500;
+    src: url('../fonts/woff/PelakFA-Medium.woff') format('woff');
+}
+@font-face{
+    font-family: 'pelak-semiBold';
+    font-weight: 600;
+    src: url('../fonts/woff/PelakFA-SemiBold.woff') format('woff');
+}
+@font-face{
     font-family: 'pelak-Bold';
+    font-weight: 700;
     src: url('../fonts/woff/PelakFA-Bold.woff') format('woff');
+}
+@font-face{
+    font-family: 'pelak-ExtraBold';
+    font-weight: 800;
+    src: url('../fonts/woff/PelakFA-ExtraBold.woff') format('woff');
+}
+@font-face{
+    font-family: 'pelak-Black';
+    font-weight: 900;
+    src: url('../fonts/woff/PelakFA-Black.woff') format('woff');
 }
 body{
     font-family: 'pelak-Regular';
@@ -15,8 +36,17 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+.fw-Medium{
+    font-family: 'pelak-Medium';
+}
+.fw-semiBold{
+    font-family: 'pelak-semiBold';
+}
 .fw-bold{
     font-family: 'pelak-Bold';
+}
+header{
+    font-family: 'pelak-semiBold';
 }
 #navbar,#navbar2 {
     padding: 20px;
@@ -25,7 +55,7 @@ a {
     z-index: 10;
 }
 
-#logo a,#navbar ul li a.link2 {
+#logo a {
     color: white;
 }
 
@@ -57,18 +87,19 @@ a {
     padding: 0 20px;
     transition: all .4s;
 }
-
+a.link2{
+    color: #475467 !important;
+}
 #nav a:hover,
 a:hover {
     color: #156860;
 }
 #nav ul a{
-    /* font-weight: 600; */
+    font-family: 'pelak-Medium';
 }
 #nav ul a:hover{
     color: #156860!important;
-    font-weight: bold;
-    font-family: pelak-Bold;
+    font-family: 'pelak-ExtraBold';
 }
 #navbar ul li a.link{
     color: #475467;
@@ -286,8 +317,14 @@ a:hover {
     color: #B42318;
 }
 .text-muted{
-    color: #475467!important;
+    color: #4754679c !important;
 }
+  .text-shadow{
+    text-shadow: #00000040 0px 6px;
+  }
+  .text-shadow2{
+    text-shadow: #00000040 0px 4px;
+  }
 /* left */
 .left-46{
     left: 46px;
@@ -397,7 +434,7 @@ a:hover {
    transition: all .4s;
   }
   .pagination > div:nth-child(2) p:hover,.gray-hover:hover,.swiper-button-prev:hover,.swiper-button-next:hover{
-    background-color: #F9FAFB;
+    background-color: #F9FAFB !important;
   }
   @keyframes shine {
     0% {
@@ -463,7 +500,6 @@ a:hover {
     #toggler {
         display: none;
     }
-
     #nav {
         position: static;
         width: auto;
@@ -471,7 +507,11 @@ a:hover {
         padding-top: 0;
     }
 }
-
+@media (max-width: 1200px) {
+    a.link2 {
+        color: white !important;
+      }
+    }
 @media (min-width: 992px) {
 
 
