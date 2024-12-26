@@ -37,16 +37,18 @@ a {
     cursor: pointer;
 }
 .fw-Medium{
-    font-family: 'pelak-Medium';
+    font-family: 'pelak-Medium' !important;
 }
 .fw-semiBold{
-    font-family: 'pelak-semiBold';
+    font-family: 'pelak-semiBold' !important
 }
 .fw-bold{
     font-family: 'pelak-Bold';
 }
 header{
     font-family: 'pelak-semiBold';
+    z-index: 30;
+    transition: all .4s;
 }
 #navbar,#navbar2 {
     padding: 20px;
@@ -67,6 +69,7 @@ header{
     cursor: pointer;
     font-size: 30px;
     margin-top: 17px;
+    transition: all .4s;
 }
 
 #nav {
@@ -111,7 +114,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    margin-top: -108px;
+    margin-top: -109px;
 }
 
 .section-header h3 {
@@ -190,7 +193,10 @@ a:hover {
     max-width: 768px;
     width: 100%;
 }
-
+.max-w-1280 {
+    max-width: 1280px;
+    width: 100%;
+}
 /* font size */
 .fs-8 {
     font-size: 8px;
@@ -250,6 +256,9 @@ a:hover {
 }
 .w-111 {
     width: 111px;
+}
+.w-202 {
+    width: 202px;
 }
 .w-294 {
     width: 294px;
@@ -316,11 +325,14 @@ a:hover {
 .text-red{
     color: #B42318;
 }
+.text-dark2{
+    color: #101828;
+}
 .text-muted{
-    color: #4754679c !important;
+    color: #667085 !important;
 }
   .text-shadow{
-    text-shadow: #00000040 0px 6px;
+    text-shadow: #00000040 0px 10px 11px;
   }
   .text-shadow2{
     text-shadow: #00000040 0px 4px;
@@ -331,6 +343,24 @@ a:hover {
 }
 .left-60{
     left: 60px;
+}
+.-left-162{
+    left: -162px;
+}
+/* top */
+.-top-47{
+    top: -47px;
+}
+.-top-97{
+    top: -97px;
+}
+/* bottom */
+.-bottom-96{
+    bottom: -96px;
+}
+/* position */
+.position-stisky{
+    position: sticky;
 }
 /* resize */
 .resize-none{
@@ -395,7 +425,10 @@ a:hover {
 .rounded-16 {
     border-radius: 16px;
 }
-
+/* input */
+input::placeholder{
+    color: #667085;
+}
 /* outline-none */
 .outline-none {
     outline: none;
@@ -538,6 +571,9 @@ a:hover {
    .mb-md-65{
     margin-bottom: 65px;
    }
+   .position-lg-static{
+    position: static !important;
+   }
 }
 @media (max-width: 768px) {
     .fs-md-14 {
@@ -566,6 +602,12 @@ a:hover {
 @media (max-width: 576px) {
   .w-sm-36{
     width: 36px;
+  }
+  .w-sm-100{
+    width: 100%;
+  }
+  .w-sm-128{
+    width: 128px;
   }
   .h-sm-36{
     height: 36px;
