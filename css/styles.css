@@ -31,6 +31,7 @@
 body{
     font-family: 'pelak-Regular';
     user-select: none;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -38,12 +39,15 @@ a {
 }
 .fw-Medium{
     font-family: 'pelak-Medium' !important;
+    font-weight: 500;
 }
 .fw-semiBold{
-    font-family: 'pelak-semiBold' !important
+    font-family: 'pelak-semiBold' !important;
+    font-weight: 600;
 }
 .fw-bold{
     font-family: 'pelak-Bold';
+    font-weight: 700;
 }
 header{
     font-family: 'pelak-semiBold';
@@ -270,7 +274,9 @@ a:hover {
 .h-8 {
     height: 8px;
 }
-
+.h-16 {
+    height: 16px;
+}
 .h-24 {
     height: 24px;
 }
@@ -335,7 +341,7 @@ a:hover {
     text-shadow: #00000040 0px 10px 11px;
   }
   .text-shadow2{
-    text-shadow: #00000040 0px 4px;
+    text-shadow: #00000040 0px 8px 6px;
   }
 /* left */
 .left-46{
@@ -347,12 +353,28 @@ a:hover {
 .-left-162{
     left: -162px;
 }
+/* right */
+.-right-212 {
+    right: -212px;
+}
 /* top */
-.-top-47{
-    top: -47px;
+.top-7{
+    top: 7px;
+}
+.-top-89{
+    top: -89px;
 }
 .-top-97{
     top: -97px;
+}
+.-top-173{
+    top: -173px;
+}
+.-top-184{
+    top: -184px;
+}
+.-top-221{
+    top: -221px;
 }
 /* bottom */
 .-bottom-96{
@@ -433,7 +455,10 @@ input::placeholder{
 .outline-none {
     outline: none;
 }
-
+/* opacity */
+.opacity-50{
+    opacity: 50%;
+}
 /* accordion */
 .accordionBtn div p:last-child,
 .accordionBtn.active div p:first-child {
