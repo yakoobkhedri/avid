@@ -231,6 +231,9 @@ a:hover {
 .fs-30 {
     font-size: 30px;
 }
+.fs-32 {
+    font-size: 32px;
+}
 .fs-36 {
     font-size: 36px;
 }
@@ -262,6 +265,9 @@ a:hover {
 .w-56 {
     width: 56px !important;
 }
+.w-64 {
+    width: 64px !important;
+}
 .w-111 {
     width: 111px;
 }
@@ -292,6 +298,9 @@ a:hover {
 }
 .h-56 {
     height: 56px !important;
+}
+.h-64 {
+    height: 64px !important;
 }
 .h-68 {
     height: 68px;
@@ -363,6 +372,13 @@ a:hover {
   }
   .button:hover{
     background-color: #1A3D36;
+  }
+  .button2[disabled]{
+    color: #D0D5DD;
+    cursor: default;
+  }
+  .button2[disabled] path{
+    stroke: #D0D5DD;
   }
   /* focus */
   input{
@@ -448,7 +464,9 @@ a:hover {
 .bg-gray {
     background-color: #F9FAFB;
 }
-
+.bg-pink{
+    background-color: #FEF3F2;
+}
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 1px 2px 0px #1018280D;
@@ -486,6 +504,11 @@ input::placeholder{
 /* opacity */
 .opacity-50{
     opacity: 50%;
+}
+/* error */
+.otp input.error{
+    border: 1px solid #B42318;
+    color: #B42318;
 }
 /* accordion */
 .accordionBtn div p:last-child,
@@ -548,6 +571,22 @@ input::placeholder{
   .tab.active, .tab:hover{
     background-color: #F9FAFB;
   }
+  /* input number */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+input[type=number]:focus{
+    border: 1px solid #2D7B6B !important;
+    box-shadow: none;
+}
+input[type=number].error:focus{
+    border: 1px solid #B42318 !important;
+}
   /* checkbox */
   .form-check-input:checked {
     background-color: #CCFBEF;
