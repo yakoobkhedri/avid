@@ -696,7 +696,7 @@ input[type=number].error:focus{
     width: 36px;
   }
   .w-sm-100{
-    width: 100%;
+    width: 100% !important;
   }
   .w-sm-128{
     width: 128px;
@@ -706,5 +706,8 @@ input[type=number].error:focus{
   }
   .border-sm-gray{
     border: 1px solid #D0D5DD;
+  }
+  .fs-sm-24{
+    font-size: 24px;
   }
 }
