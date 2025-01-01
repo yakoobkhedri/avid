@@ -189,6 +189,10 @@ a:hover {
     max-width: 358px;
     width: 100%;
 }
+.max-w-400 {
+    max-width: 400px;
+    width: 100%;
+}
 .max-w-480 {
     max-width: 480px;
     width: 100%;
@@ -213,7 +217,9 @@ a:hover {
 .fs-12 {
     font-size: 12px;
 }
-
+.fs-13 {
+    font-size: 13px;
+}
 .fs-14 {
     font-size: 14px;
 }
@@ -319,6 +325,9 @@ a:hover {
     z-index: 10;
 }
 /* padding */
+.p-24{
+    padding: 24px;
+}
 .pr-custom {
     padding-right: calc((100% - 1298px) / 2);
 }
@@ -346,6 +355,9 @@ a:hover {
 }
 .text-red{
     color: #B42318;
+}
+.text-red2{
+    color: #F04438;
 }
 .text-dark2{
     color: #101828;
@@ -430,6 +442,10 @@ a:hover {
 /* position */
 .position-stisky{
     position: sticky;
+}
+/* line height */
+.lh-20{
+    line-height: 20px;
 }
 /* resize */
 .resize-none{
@@ -519,6 +535,25 @@ input::placeholder{
     border: 1px solid #B42318;
     color: #B42318;
 }
+.inputBox.error input{
+    border: 1px solid #FDA29B !important;
+  }
+  .inputBox.error div svg:first-child, .inputBox.error div svg:last-child,.inputBox.success div svg:first-child{
+    display: none;
+  }
+  .inputBox.error div svg:nth-child(2),.inputBox.error .errors,.inputBox.success div svg:last-child{
+    display: block !important;
+  }
+/* successMessage */
+.successMessage div.success{
+  color: #2D7B6B;
+}
+.successMessage div img{
+  display: none;
+}
+.successMessage div.success img{
+    display: block;
+  }
 /* accordion */
 .accordionBtn div p:last-child,
 .accordionBtn.active div p:first-child {
@@ -538,16 +573,6 @@ input::placeholder{
 .accordionContent.active {
     max-height: 2000px;
 }
-/* successMessage */
-.successMessage div.success{
-  color: #2D7B6B;
-}
-.successMessage div img{
-  display: none;
-}
-.successMessage div.success img{
-    display: block;
-  }
 /* hover */
 .btnHover {
     transition: all .4s;

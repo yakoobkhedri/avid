@@ -14,10 +14,38 @@
 
 <body>
 
+    <!-- laws Modal -->
+    <div class="modal fade" id="laws" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered max-w-400 mx-auto">
+            <div class="modal-content rounded-16 p-24">
+                <div class="modal-header border-0 p-0">
+                    <h1 class="modal-title fs-20 fw-bold" id="exampleModalLabel">قوانین</h1>
+                    <button type="button" class="btn-close ms-0 fs-13" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 p-0 mt-2">
+                    <p class="fs-14 lh-20 text-gray3 mb-0">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <label for="law" class="d-flex align-items-center gap-2 cursor-pointer mt-3 me-4">
+                        <input id="law" type="checkbox" class="form-check-input cursor-pointer">
+                        <p
+                            class="mb-0 fw-Medium text-green fs-14">من شرایط و ضوابط را مطالعه
+                            کرده‌ام.</p>
+                    </label>
+                </div>
+                <div class="modal-footer border-0 p-0 mt-3">
+                    <button type="button" class="btn bg-green w-100 text-white rounded-8 fw-semiBold h-48 btnHover" data-bs-dismiss="modal">تایید</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <section>
         <div class="row mx-0">
-            <div class="col-lg-5 h-100vh h-lg-auto overflow-auto hiddenScroll order-lg-first order-last d-flex align-items-center justify-content-center">
+            <div
+                class="col-lg-5 h-100vh h-lg-auto overflow-auto hiddenScroll order-lg-first order-last d-flex align-items-center justify-content-center">
                 <div class="max-w-358 mx-auto py-4">
                     <img alt="logo" src="../images/Logo (2).png" class="img-fluid mx-auto d-block">
                     <h2 class="text-green text-center fw-semiBold mt-5">ثبت نام به آوید کراد</h2>
@@ -63,13 +91,15 @@
                                 شامل حداقل یک کاراکتر خاص مانند (!، @، #، $، %، &) باشد.
                             </p>
                         </div>
-                        <label class="d-flex align-items-center gap-2 cursor-pointer mt-4 me-4 pt-1">
-                            <input type="checkbox" class="form-check-input cursor-pointer">
-                            <p class="mb-0 fw-Medium text-green fs-14 border-b-green lh-sm">من شرایط و ضوابط را مطالعه کرده‌ام.</p>
-                        </label>
+                        <div class="d-flex align-items-center gap-2 cursor-pointer mt-4 me-4 pt-1">
+                            <input id="law" type="checkbox" class="form-check-input cursor-pointer">
+                            <p data-bs-toggle="modal" data-bs-target="#laws"
+                                class="mb-0 fw-Medium text-green fs-14 border-b-green lh-sm">من شرایط و ضوابط را مطالعه
+                                کرده‌ام.</p>
+                        </div>
                         <div class="d-flex align-items-center justify-content-center gap-2 mt-4">
-                          <p class="mb-0 text-gray3">از قبل حساب کاربری دارید؟</p>
-                          <a href="login.html" class="fw-semiBold text-green">وارد شوید</a>
+                            <p class="mb-0 text-gray3">از قبل حساب کاربری دارید؟</p>
+                            <a href="login.html" class="fw-semiBold text-green">وارد شوید</a>
                         </div>
                         <button disabled
                             class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
@@ -86,7 +116,7 @@
 
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
