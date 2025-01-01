@@ -484,6 +484,9 @@ a:hover {
 .shadow-3{
     box-shadow: 0px 0px 0px 4px #DEEEEB;
 }
+.shadow-4{
+    box-shadow: 0px 4px 6.8px 0px #BBD8EE40;
+}
 /* border radius */
 .rounded-6 {
     border-radius: 6px;
@@ -535,6 +538,16 @@ input::placeholder{
 .accordionContent.active {
     max-height: 2000px;
 }
+/* successMessage */
+.successMessage div.success{
+  color: #2D7B6B;
+}
+.successMessage div img{
+  display: none;
+}
+.successMessage div.success img{
+    display: block;
+  }
 /* hover */
 .btnHover {
     transition: all .4s;
