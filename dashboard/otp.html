@@ -22,13 +22,13 @@
                    <img alt="logo" src="../images/Logo (2).png" class="img-fluid mx-auto d-block">
                    <h2 class="text-green text-center fw-semiBold mt-5">تایید شماره همراه</h2>
                    <p class="text-center text-muted fs-14">کد ۵ رقمی به شماره ۰۹۹۶۳۳۱۷۷۱۰ شد. کد ارسالی را وارد کن</p>
-                   <form class="mt-5 pt-2">
-                      <div class="otp d-flex align-items-center gap-2 fs-32 fs-sm-24 fw-semiBold" dir="ltr">
-                        <input class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 border text-center text-green error" min="0" max="9" maxlength="1" type="number">
-                        <input class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 border text-center text-green" min="0" max="9" maxlength="1" type="number">
-                        <input class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 border text-center text-green" min="0" max="9" maxlength="1" type="number">
-                        <input class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 border text-center text-green" min="0" max="9" maxlength="1" type="number">
-                        <input class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 border text-center text-green" min="0" max="9" maxlength="1" type="number">
+                   <form id="otpForm" class="mt-5 pt-2">
+                      <div id="otpContainer" class="otp d-flex align-items-center gap-2 fs-32 fs-sm-24 fw-semiBold" dir="ltr">
+                        <input class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 otp-input border text-center text-green" min="0" max="9" maxlength="1" type="text">
+                        <input disabled class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 otp-input border text-center text-green" min="0" max="9" maxlength="1" type="text">
+                        <input disabled class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 otp-input border text-center text-green" min="0" max="9" maxlength="1" type="text">
+                        <input disabled class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 otp-input border text-center text-green" min="0" max="9" maxlength="1" type="text">
+                        <input disabled class="outline-none flex-grow-1 w-sm-100 w-64 h-64 rounded-8 otp-input border text-center text-green" min="0" max="9" maxlength="1" type="text">
                       </div>
                       <p class="errorText fs-14 text-center text-red mb-0 mt-3">عدد وارد شده صحیح نمی‌باشد</p>
                       <div class="mt-4">
@@ -57,7 +57,7 @@
                             <p class="mb-0">لطفا کد تایید درست را وارد نمایید</p>
                           </div>
                       </div>
-                      <button disabled class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
+                      <button id="submitOtp" disabled class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
                         ادامه
                       </button>
                    </form>
@@ -72,6 +72,7 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/validateOtp.js"></script>
 </body>
 
 </html>
