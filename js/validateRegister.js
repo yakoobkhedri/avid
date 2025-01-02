@@ -1,3 +1,4 @@
+const togglePassword = document.getElementById('togglePassword');
 const phoneInput = document.getElementById('phoneInput');
 const firstNameInput = document.getElementById('firstNameInput');
 const lastNameInput = document.getElementById('lastNameInput');
@@ -15,12 +16,13 @@ function validateForm() {
     const firstNameFilled = firstNameInput.value.trim() !== '';
     const lastNameFilled = lastNameInput.value.trim() !== '';
     const passwordValid = passwordLengthRegex.test(passwordInput.value) &&
-                          containsNumberRegex.test(passwordInput.value) &&
-                          specialCharRegex.test(passwordInput.value);
+        containsNumberRegex.test(passwordInput.value) &&
+        specialCharRegex.test(passwordInput.value);
 
-    // Enable the submit button if all fields are valid
-    submitButton.disabled = !(phoneValid && firstNameFilled && lastNameFilled && passwordValid);
-}
+        // Enable the submit button if all fields are valid
+        submitButton.disabled = !(phoneValid && firstNameFilled && lastNameFilled && passwordValid);
+    }
+
 
 // Event listeners for each input to validate on input change
 phoneInput.addEventListener('input', validateForm);
@@ -34,7 +36,6 @@ document.getElementById('validationForm').addEventListener('submit', (event) => 
     alert('Form submitted successfully!');
 });
 
-const togglePassword = document.getElementById('togglePassword');
 
 togglePassword.addEventListener('click', () => {
     // Toggle the type attribute
@@ -58,4 +59,20 @@ togglePassword.addEventListener('click', () => {
 </svg>
         `;
     }
+});
+
+const checkbox1 = document.getElementById('checkbox1');
+const checkbox2 = document.getElementById('checkbox2');
+
+// Function to sync the checkboxes
+function syncCheckboxes() {
+    // Set the state of checkbox2 to match checkbox1
+    checkbox2.checked = checkbox1.checked;
+}
+
+// Event listeners for both checkboxes
+checkbox1.addEventListener('change', syncCheckboxes);
+checkbox2.addEventListener('change', () => {
+    // Set the state of checkbox1 to match checkbox2
+    checkbox1.checked = checkbox2.checked;
 });
