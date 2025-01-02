@@ -752,9 +752,9 @@ input::placeholder {
 
 /* scroll */
 .hiddenScroll::-webkit-scrollbar {
-    width: 12px;
+    width: 1px;
     /* Width of the scrollbar */
-    height: 12px;
+    height: 1px;
     /* Height for horizontal scrollbar */
 }
 
@@ -768,7 +768,7 @@ input::placeholder {
 
 /* The scrollbar thumb (the draggable part) */
 .hiddenScroll::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, transparent, transparent);
+    background: linear-gradient(45deg, #2d7b6b, transparent);
     /* Gradient effect */
     border-radius: 10px;
     /* Rounded corners */
@@ -778,7 +778,7 @@ input::placeholder {
 
 /* The scrollbar thumb on hover */
 .hiddenScroll::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, transparent, transparent);
+    background: linear-gradient(45deg, #2d7b6b, transparent);
     /* Darker gradient on hover */
 }
 
@@ -786,7 +786,7 @@ input::placeholder {
 * {
     scrollbar-width: thin;
     /* Thin scrollbar */
-    scrollbar-color: transparent transparent;
+    scrollbar-color: #2d7b6b transparent;
     /* Thumb and track colors */
 }
 

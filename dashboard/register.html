@@ -50,25 +50,25 @@
                     <img alt="logo" src="../images/Logo (2).png" class="img-fluid mx-auto d-block">
                     <h2 class="text-green text-center fw-semiBold mt-5">ثبت نام به آوید کراد</h2>
                     <p class="text-center text-muted fs-14">حساب خود را در آوید ایجاد کنید</p>
-                    <form class="mt-4">
+                    <form id="validationForm" class="mt-4">
                         <div class="mb-4">
                             <label class="fs-14 fw-Medium text-muted2">نام</label>
-                            <input placeholder="نام خود را وارد کنید"
+                            <input id="firstNameInput" placeholder="نام خود را وارد کنید"
                                 class="rounded-8 border outline-none w-100 mt-1 p-2">
                         </div>
                         <div class="mb-4">
                             <label class="fs-14 fw-Medium text-muted2">نام و نام خانوادگی</label>
-                            <input placeholder="نام خانوادگی خود را وارد کنید"
+                            <input id="lastNameInput" placeholder="نام خانوادگی خود را وارد کنید"
                                 class="rounded-8 border outline-none w-100 mt-1 p-2">
                         </div>
                         <div class="mb-4">
                             <label class="fs-14 fw-Medium text-muted2">شماره موبایل</label>
-                            <input placeholder="۰۹۹۶۳۳۱۷۷۱۰" class="rounded-8 border outline-none w-100 mt-1 p-2">
+                            <input id="phoneInput" placeholder="۰۹۹۶۳۳۱۷۷۱۰" class="rounded-8 border outline-none w-100 mt-1 p-2">
                         </div>
                         <div class="mb-3">
                             <label class="fs-14 fw-Medium text-muted2">رمز عبور</label>
                             <div class="mt-1 position-relative">
-                                <input type="password" placeholder="یک رمز عبور بسازید"
+                                <input id="passwordInput" type="password" placeholder="یک رمز عبور بسازید"
                                     class="outline-none border rounded-8 w-100 p-2">
                                 <div class="cursor-pointer position-absolute start-0 top-0 m-2 ms-3">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -101,7 +101,7 @@
                             <p class="mb-0 text-gray3">از قبل حساب کاربری دارید؟</p>
                             <a href="login.html" class="fw-semiBold text-green">وارد شوید</a>
                         </div>
-                        <button disabled
+                        <button disabled id="submitBtn"
                             class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
                             ثبت نام
                         </button>
@@ -117,6 +117,7 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validateRegister.js"></script>
 </body>
 
 </html>
