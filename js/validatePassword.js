@@ -47,3 +47,7 @@ togglePassword.addEventListener('click', () => {
       event.preventDefault();
       alert('Password is valid and form submitted.');
   });
+
+  window.addEventListener('load' , function () {
+    submitPassword.disabled = 'true';
+})

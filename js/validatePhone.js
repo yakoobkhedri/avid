@@ -15,3 +15,8 @@ phoneInput.addEventListener('input', () => {
     const isValid = validatePhoneNumber(phoneInput.value);
     submitButton.disabled = !isValid; // Enable the button if valid, disable otherwise
 });
+
+window.addEventListener('load' , function () {
+    submitButton.disabled = 'true';
+    phoneInput.value = '';
+})

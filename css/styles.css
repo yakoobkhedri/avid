@@ -650,15 +650,19 @@ input::placeholder {
     border: 1px solid #FDA29B !important;
 }
 
-.inputBox.error div svg:first-child,
-.inputBox.error div svg:last-child,
-.inputBox.success div svg:first-child {
-    display: none;
+.inputBox.error div.second svg:last-child,
+.inputBox.error div.first svg,
+.inputBox.success div.second svg:first-child ,
+.inputBox div.second svg:first-child ,
+.inputBox div.second svg:last-child ,
+.inputBox.success div.first svg
+{
+    display: none !important;
 }
 
-.inputBox.error div svg:nth-child(2),
+.inputBox.error div.second svg:first-child,
 .inputBox.error .errors,
-.inputBox.success div svg:last-child {
+.inputBox.success div.second svg:last-child {
     display: block !important;
 }
 

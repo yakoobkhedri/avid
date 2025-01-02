@@ -76,3 +76,7 @@ checkbox2.addEventListener('change', () => {
     // Set the state of checkbox1 to match checkbox2
     checkbox1.checked = checkbox2.checked;
 });
+
+window.addEventListener('load' , function () {
+    submitButton.disabled = 'true';
+})

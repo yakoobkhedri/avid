@@ -3,12 +3,32 @@ const passwordInput = document.getElementById('passwordInput');
 const submitButton = document.getElementById('submitBtn');
 
 const passwordLengthRegex = /^.{8,}$/;  // At least 8 characters
+const containsNumberRegex = /\d/;
 const specialCharRegex = /[!@#$%&]/;  // At least one special character (!, @, #, $, %, &)
 
 
 function validateForm() {
+    if (passwordLengthRegex.test(passwordInput.value)) {
+        document.querySelector('.successMessage > div:first-child').classList.add('success');
+    } else {
+        document.querySelector('.successMessage > div:first-child').classList.remove('success');
+    }
+
+    if (containsNumberRegex.test(passwordInput.value)) {
+        document.querySelector('.successMessage > div:nth-child(2)').classList.add('success');
+    } else {
+        document.querySelector('.successMessage > div:nth-child(2)').classList.remove('success');
+    }
+
+    if (specialCharRegex.test(passwordInput.value)) {
+        document.querySelector('.successMessage > div:last-child').classList.add('success');
+    } else {
+        document.querySelector('.successMessage > div:last-child').classList.remove('success');
+    }
+
     const passwordValid = passwordLengthRegex.test(passwordInput.value) &&
-        specialCharRegex.test(passwordInput.value);
+        containsNumberRegex.test(passwordInput.value) &&
+        specialCharRegex.test(passwordInput.value)
 
         // Enable the submit button if all fields are valid
         submitButton.disabled = !(passwordValid);
@@ -48,3 +68,7 @@ togglePassword.addEventListener('click', () => {
         `;
     }
 });
+
+window.addEventListener('load' , function () {
+    submitButton.disabled = 'true';
+})
