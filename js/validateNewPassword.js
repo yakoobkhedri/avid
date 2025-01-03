@@ -10,22 +10,38 @@ const specialCharRegex = /[!@#$%&]/;  // At least one special character (!, @, #
 function validateForm() {
     if (passwordLengthRegex.test(passwordInput.value)) {
         document.querySelector('.successMessage > div:first-child').classList.add('success');
+        document.querySelector('.errors p:first-child').style.display = 'none'
     } else {
         document.querySelector('.successMessage > div:first-child').classList.remove('success');
+        document.querySelector('.inputBox').classList.add('error');
+        document.querySelector('.errors p:first-child').style.display = 'block'
+
     }
 
     if (containsNumberRegex.test(passwordInput.value)) {
         document.querySelector('.successMessage > div:nth-child(2)').classList.add('success');
+        document.querySelector('.errors p:nth-child(2)').style.display = 'none'
+
     } else {
         document.querySelector('.successMessage > div:nth-child(2)').classList.remove('success');
+        document.querySelector('.inputBox').classList.add('error');
+        document.querySelector('.errors p:nth-child(2)').style.display = 'block'
     }
 
     if (specialCharRegex.test(passwordInput.value)) {
         document.querySelector('.successMessage > div:last-child').classList.add('success');
+         document.querySelector('.errors p:last-child').style.display = 'none'
     } else {
         document.querySelector('.successMessage > div:last-child').classList.remove('success');
+        document.querySelector('.inputBox').classList.add('error');
+         document.querySelector('.errors p:last-child').style.display = 'block'
     }
-
+    if (passwordLengthRegex.test(passwordInput.value) && containsNumberRegex.test(passwordInput.value) && specialCharRegex.test(passwordInput.value)) {
+        document.querySelector('.inputBox').classList.remove('error');
+        document.querySelector('.inputBox').classList.add('success');
+    } else {
+        document.querySelector('.inputBox').classList.remove('success');
+    }
     const passwordValid = passwordLengthRegex.test(passwordInput.value) &&
         containsNumberRegex.test(passwordInput.value) &&
         specialCharRegex.test(passwordInput.value)

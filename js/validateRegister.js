@@ -5,13 +5,48 @@ const lastNameInput = document.getElementById('lastNameInput');
 const passwordInput = document.getElementById('passwordInput');
 const submitButton = document.getElementById('submitBtn');
 
+const checkbox1 = document.getElementById('checkbox1');
+const checkbox2 = document.getElementById('checkbox2');
+
+// Function to sync the checkboxes
+function syncCheckboxes() {
+    // Set the state of checkbox2 to match checkbox1
+    checkbox2.checked = checkbox1.checked;
+}
+
+// Event listeners for both checkboxes
+checkbox1.addEventListener('change', syncCheckboxes);
+checkbox2.addEventListener('change', () => {
+    // Set the state of checkbox1 to match checkbox2
+    checkbox1.checked = checkbox2.checked;
+});
+
 const phoneRegex = /^\d{11}$/;  // 11 digits, numeric
 const passwordLengthRegex = /^.{8,}$/;  // At least 8 characters
 const containsNumberRegex = /\d/;
 const specialCharRegex = /[!@#$%&]/;  // At least one special character (!, @, #, $, %, &)
 
 
+
 function validateForm() {
+    if (passwordLengthRegex.test(passwordInput.value)) {
+        document.querySelector('.successMessage > div:first-child').classList.add('success');
+    } else {
+        document.querySelector('.successMessage > div:first-child').classList.remove('success');
+    }
+
+    if (containsNumberRegex.test(passwordInput.value)) {
+        document.querySelector('.successMessage > div:nth-child(2)').classList.add('success');
+    } else {
+        document.querySelector('.successMessage > div:nth-child(2)').classList.remove('success');
+    }
+
+    if (specialCharRegex.test(passwordInput.value)) {
+        document.querySelector('.successMessage > div:last-child').classList.add('success');
+    } else {
+        document.querySelector('.successMessage > div:last-child').classList.remove('success');
+    }
+
     const phoneValid = phoneRegex.test(phoneInput.value);
     const firstNameFilled = firstNameInput.value.trim() !== '';
     const lastNameFilled = lastNameInput.value.trim() !== '';
@@ -59,22 +94,6 @@ togglePassword.addEventListener('click', () => {
 </svg>
         `;
     }
-});
-
-const checkbox1 = document.getElementById('checkbox1');
-const checkbox2 = document.getElementById('checkbox2');
-
-// Function to sync the checkboxes
-function syncCheckboxes() {
-    // Set the state of checkbox2 to match checkbox1
-    checkbox2.checked = checkbox1.checked;
-}
-
-// Event listeners for both checkboxes
-checkbox1.addEventListener('change', syncCheckboxes);
-checkbox2.addEventListener('change', () => {
-    // Set the state of checkbox1 to match checkbox2
-    checkbox1.checked = checkbox2.checked;
 });
 
 window.addEventListener('load' , function () {

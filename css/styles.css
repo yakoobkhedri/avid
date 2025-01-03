@@ -483,6 +483,9 @@ input:focus {
 }
 
 /* left */
+.left-25 {
+    left: 25px;
+}
 .left-46 {
     left: 46px;
 }
@@ -651,21 +654,21 @@ input::placeholder {
 }
 
 .inputBox.error div.second svg:last-child,
-.inputBox.error div.first svg,
 .inputBox.success div.second svg:first-child ,
 .inputBox div.second svg:first-child ,
-.inputBox div.second svg:last-child ,
-.inputBox.success div.first svg
+.inputBox div.second svg:last-child
 {
-    display: none !important;
+    display: none;
 }
 
 .inputBox.error div.second svg:first-child,
 .inputBox.error .errors,
 .inputBox.success div.second svg:last-child {
-    display: block !important;
+    display: block;
 }
-
+.errors p{
+    display: none;
+}
 /* successMessage */
 .successMessage div.success {
     color: #2D7B6B;

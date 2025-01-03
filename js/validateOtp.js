@@ -60,3 +60,12 @@ document.getElementById('otpForm').addEventListener('submit', (event) => {
         alert('Please fill in all OTP fields.');
     }
 });
+
+window.addEventListener('load' , function () {
+    submitButton.disabled = 'true';
+    Array.from(document.getElementsByClassName('otp-input')).forEach((item)=>{
+        item.value = '';
+        item.disabled = 'true';
+        document.getElementById('firstOtp').disabled = false;
+    })
+})
