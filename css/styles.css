@@ -327,7 +327,9 @@ a:hover {
 .w-202 {
     width: 202px;
 }
-
+.w-280 {
+    width: 280px;
+}
 .w-294 {
     width: 294px;
 }
@@ -352,7 +354,9 @@ a:hover {
 .h-40 {
     height: 40px;
 }
-
+.h-44{
+    height: 44px;
+}
 .h-48 {
     height: 48px;
 }
@@ -387,10 +391,15 @@ a:hover {
 }
 
 /* padding */
+.p-10{
+    padding: 10px;
+}
 .p-24 {
     padding: 24px;
 }
-
+.pt-32{
+    padding-top: 32px;
+}
 .pr-custom {
     padding-right: calc((100% - 1298px) / 2);
 }
@@ -420,7 +429,9 @@ a:hover {
 .text-gray3 {
     color: #475467;
 }
-
+.text-gray4{
+    color: #D0D5DD;
+}
 .text-red {
     color: #B42318;
 }
@@ -556,7 +567,9 @@ input:focus {
 .border-red {
     border: 1px solid #B42318;
 }
-
+.border-gray{
+    border: 1px solid #344054;
+}
 .border-b-green {
     border-bottom: 3px solid #2D7B6B;
 }
@@ -593,11 +606,15 @@ input:focus {
 .bg-gray {
     background-color: #F9FAFB;
 }
-
+.bg-gray2{
+    background-color: #1D2939;
+}
 .bg-pink {
     background-color: #FEF3F2;
 }
-
+.bg-blue{
+    background-color: #101828;
+}
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 1px 2px 0px #1018280D;
@@ -716,7 +733,14 @@ input::placeholder {
 .btnHover:hover {
     background-color: #1A3D36;
 }
-
+/* dashboard */
+#pannelList li a{
+    transition: all .4s;
+}
+#pannelList li a:hover,#pannelList li a.active{
+  background-color: #344054;
+  color: white;
+}
 /* pagination */
 .pagination>div:nth-child(2) p {
     transition: all .4s;
@@ -817,7 +841,9 @@ input[type=number]:focus,
     border: 1px solid #2D7B6B !important;
     box-shadow: none;
 }
-
+input[type=search]:focus {
+    box-shadow: none;
+}
 input[type=number].error:focus {
     border: 1px solid #B42318 !important;
 }
