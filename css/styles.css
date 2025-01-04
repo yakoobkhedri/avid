@@ -610,9 +610,11 @@ input:focus {
 .border-gray {
     border: 1px solid #344054;
 }
-.border-r-3-gray{
+
+.border-r-3-gray {
     border-right: 3px solid #98A2B3;
 }
+
 .border-b-green {
     border-bottom: 3px solid #2D7B6B;
 }
@@ -677,6 +679,10 @@ input:focus {
 
 .shadow-4 {
     box-shadow: 0px 4px 6.8px 0px #BBD8EE40;
+}
+
+.shadow-5 {
+    box-shadow: 0px 1px 3px 0px #1018281A;
 }
 
 /* border radius */
@@ -764,25 +770,33 @@ input::placeholder {
 .accordionBtn.active div p:last-child {
     display: block;
 }
-.accordionBtn2 svg:last-child{
+
+.accordionBtn2 svg:last-child {
     transition: all.4s;
 }
-.accordionBtn2 svg:last-child.active{
+
+.accordionBtn2 svg:last-child.active {
     transform: rotate(180deg);
 }
-.accordionContent,.accordionContent2 {
+
+.accordionContent,
+.accordionContent2 {
     transition: all .4s;
     max-height: 0;
     overflow: hidden;
 }
 
-.accordionContent.active,.accordionContent2.active {
+.accordionContent.active,
+.accordionContent2.active {
     max-height: 2000px;
 }
-.accordionContent2 a:hover,.accordionContent2 a.active{
+
+.accordionContent2 a:hover,
+.accordionContent2 a.active {
     color: white;
     border-right-color: white;
 }
+
 /* hover */
 .btnHover {
     transition: all .4s;
@@ -803,28 +817,33 @@ input::placeholder {
 }
 
 /* dashboard */
-#pannelList li a,#pannelList li > div {
+#pannelList li a,
+#pannelList li>div {
     transition: all .4s;
     cursor: pointer;
 }
+
 #pannelList li a svg path,
-#pannelList li > div > svg path{
-   transition: all .4s;
+#pannelList li>div>svg path {
+    transition: all .4s;
 }
-#pannelList li > a:hover,
-#pannelList li > a.active,
-#pannelList li > div:first-child.active,
-#pannelList li > div:first-child:hover,
-#pannelList li > div:first-child.active {
+
+#pannelList li>a:hover,
+#pannelList li>a.active,
+#pannelList li>div:first-child.active,
+#pannelList li>div:first-child:hover,
+#pannelList li>div:first-child.active {
     background-color: #344054;
     color: white;
 }
+
 #pannelList li a:hover svg path,
 #pannelList li a.active svg path,
-#pannelList li > div:hover svg path,
-#pannelList li > div.active svg path {
-   stroke: white;
+#pannelList li>div:hover svg path,
+#pannelList li>div.active svg path {
+    stroke: white;
 }
+
 /* pagination */
 .pagination>div:nth-child(2) p {
     transition: all .4s;
