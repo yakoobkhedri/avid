@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>پروفایل</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../css/rtl.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
+    
 </head>
 
 <body>
 
+    <!-- overlay -->
+     <div id="overlay"></div>
 
     <section class="d-flex">
-      <div class="w-280 flex-shrink-0 bg-blue h-100vh overflow-auto p-24 pt-32">
+      <div id="sidebar" class="w-280 flex-shrink-0 bg-blue h-100vh overflow-auto p-24 pt-32 z-20">
         <a class="d-inline-block"><img alt="logo" src="../../images/Logo (3).png"></a>
         <form class="d-flex align-items-center gap-2 rounded-8 border-gray h-44 bg-gray2 p-10 mt-4">
           <button class="bg-transparent border-0">
@@ -69,8 +73,9 @@
           </li>
         </ul>
       </div>
-      <div class="flex-grow-1 h-100vh overflow-auto p-4">
+      <div class="flex-grow-1 h-100vh h-lg-auto overflow-auto px-sm-4 px-2 py-4">
         <div class="d-flex align-items-center gap-3 fs-24 fw-semiBold">
+          <i id="openSidebar" class="bi bi-list cursor-pointer d-lg-none"></i>
          <a class="svgHover">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2402 7.90625L27.3336 15.9996L19.2402 24.0929" stroke="#101828" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,13 +86,13 @@
         </div>
         <div class="border rounded-32 overflow-hidden mt-5">
           <img alt="img" src="../../images/dashboard/Mask group.png" class="img-fluid w-100 h-260">
-          <div class="d-flex flex-wrap flex-xl-nowrap align-items-end justify-content-between gap-3 p-4 pe-xl-5 pb-5 me-xl-5 -mt-82">
+          <div class="d-flex flex-wrap flex-xl-nowrap align-items-end justify-content-between gap-3 p-3 p-sm-4 pe-xl-5 pb-5 me-xl-5 -mt-82">
             <div>
                <div class="d-flex align-items-end gap-2">
                  <img alt="img" src="../../images/dashboard/Mask group (2).png" class="rounded-circle w-120 h-120">
                  <p class="mb-0 fs-24 fw-semiBold">مرتضی شکوری</p>
                </div>
-               <div class="d-flex align-items-end gap-2 fs-18 mt-3">
+               <div class="d-flex flex-wrap align-items-end gap-2 fs-18 mt-3">
                  <p class="mb-0 fw-Medium text-dark2">وضعیت کاربر:</p>
                  <p class="mb-0 fw-bold text-red">منتظر تکمیل اطلاعات</p>
                </div>
@@ -107,7 +112,7 @@
                   <p class="mb-0 text-white fw-semiBold">دریافت اطلاعات سجام</p>
                 </a>
               </div>
-              <div class="d-flex align-items-center justify-content-xl-end gap-2 fs-18 fw-Medium mt-3">
+              <div class="d-flex flex-wrap align-items-center justify-content-xl-end gap-2 fs-18 fs-sm-16 fw-Medium mt-3">
                 <p class="mb-0 text-dark">تاریخ آخرین بروزرسانی از سجام:</p>
                 <p class="mb-0 text-gray3">۱۷:۲۸:۱۳    ۱۴۰۳-۰۹-۲۰</p>
               </div>
@@ -115,40 +120,40 @@
           </div>
         </div>
         <form class="mb-5 mt-4">
-          <div class="d-flex align-items-start gap-3 border-bottom py-3">
-            <label class="w-280 d-block fs-14 fw-Medium text-dark2">نام</label>
-            <div class="max-w-512 d-flex align-items-center gap-3">
-              <input placeholder="نام" class="h-44 border outline-none rounded-8 w-50 px-3">
-              <input placeholder="نام خانوادگی" class="h-44 border outline-none rounded-8 w-50 px-3">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
+            <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">نام</label>
+            <div class="max-w-512 max-w-md-100 d-flex flex-sm-row flex-column align-items-center gap-3">
+              <input placeholder="نام" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
+              <input placeholder="نام خانوادگی" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
             </div>
           </div>
-          <div class="d-flex align-items-start gap-3 border-bottom py-3">
-            <label class="w-280 d-block fs-14 fw-Medium text-dark2">شماره موبایل</label>
-            <div class="max-w-512">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
+            <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">شماره موبایل</label>
+            <div class="max-w-512 max-w-md-100">
               <input placeholder="شماره موبایل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
-          <div class="d-flex align-items-start gap-3 border-bottom py-3">
-            <label class="w-280 d-block fs-14 fw-Medium text-dark2">ایمیل</label>
-            <div class="max-w-512">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
+            <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">ایمیل</label>
+            <div class="max-w-512 max-w-md-100">
               <input placeholder="ایمیل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
-          <div class="d-flex align-items-start gap-3 border-bottom py-3">
-            <label class="w-280 d-block fs-14 fw-Medium text-dark2">کد ملی</label>
-            <div class="max-w-512">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
+            <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">کد ملی</label>
+            <div class="max-w-512 max-w-md-100">
               <input placeholder="کد ملی خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
-          <div class="d-flex align-items-start gap-3 border-bottom py-3">
-            <label class="w-280 d-block fs-14 fw-Medium text-dark2">کد سجام</label>
-            <div class="max-w-512">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
+            <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">کد سجام</label>
+            <div class="max-w-512 max-w-md-100">
               <input placeholder="کد سجام خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
-          <div class="d-flex align-items-start gap-3 border-bottom py-3">
-            <label class="w-280 d-block fs-14 fw-Medium text-dark2">شماره شبا</label>
-            <div class="max-w-512">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
+            <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">شماره شبا</label>
+            <div class="max-w-512 max-w-md-100">
               <input placeholder="شماره شبا خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
@@ -159,6 +164,7 @@
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/sidebar.js"></script>
 </body>
 
 </html>
