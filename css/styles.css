@@ -221,7 +221,10 @@ a:hover {
     max-width: 480px;
     width: 100%;
 }
-
+.max-w-512 {
+    max-width: 512px;
+    width: 100%;
+}
 .max-w-720 {
     max-width: 720px;
     width: 100%;
@@ -320,7 +323,9 @@ a:hover {
 .w-111 {
     width: 111px;
 }
-
+.w-120 {
+    width: 120px;
+}
 .w-158 {
     width: 158px !important;
 }
@@ -376,11 +381,15 @@ a:hover {
 .h-100vh {
     height: 100vh;
 }
-
+.h-120 {
+    height: 120px;
+}
 .h-142 {
     height: 142px;
 }
-
+.h-260 {
+    height: 260px;
+}
 /* z index */
 .z-0 {
     z-index: 0;
@@ -408,7 +417,9 @@ a:hover {
 .mb-8 {
     margin-bottom: 8px;
 }
-
+.-mt-82{
+    margin-top: -82px;
+}
 .mt-155 {
     margin-top: 155px;
 }
@@ -648,7 +659,9 @@ input:focus {
 .rounded-16 {
     border-radius: 16px;
 }
-
+.rounded-32{
+    border-radius: 32px;
+}
 /* input */
 input::placeholder {
     color: #667085;
@@ -732,6 +745,12 @@ input::placeholder {
 
 .btnHover:hover {
     background-color: #1A3D36;
+}
+.svgHover svg path{
+    transition: all .4s;
+}
+.svgHover:hover svg path{
+    stroke: #2D7B6B;
 }
 /* dashboard */
 #pannelList li a{
@@ -1001,4 +1020,9 @@ input[type=number].error:focus {
     .fs-sm-24 {
         font-size: 24px;
     }
+}
+@media (max-width: 400px) {
+   .w-xs-100{
+    width: 100%;
+   }
 }
