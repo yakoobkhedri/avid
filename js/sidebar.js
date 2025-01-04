@@ -11,3 +11,15 @@ document.getElementById('overlay').addEventListener('click' , function () {
     sidebar.classList.remove('open');
     document.querySelector('body').style.overflow = 'auto';
 })
+
+// accordion
+
+let accordionBtn2 = Array.from(document.getElementsByClassName('accordionBtn2'));
+
+accordionBtn2.forEach((item)=>{
+    item.addEventListener('click', function () {
+        item.nextElementSibling.classList.toggle('active');
+        item.classList.toggle('active');
+        item.querySelector('svg:last-child').classList.toggle('active');
+    })
+})

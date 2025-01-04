@@ -764,14 +764,19 @@ input::placeholder {
 .accordionBtn.active div p:last-child {
     display: block;
 }
-
-.accordionContent {
+.accordionBtn2 svg:last-child{
+    transition: all.4s;
+}
+.accordionBtn2 svg:last-child.active{
+    transform: rotate(180deg);
+}
+.accordionContent,.accordionContent2 {
     transition: all .4s;
     max-height: 0;
     overflow: hidden;
 }
 
-.accordionContent.active {
+.accordionContent.active,.accordionContent2.active {
     max-height: 2000px;
 }
 .accordionContent2 a:hover,.accordionContent2 a.active{
