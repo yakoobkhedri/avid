@@ -118,7 +118,7 @@
                </div>
                <div class="d-flex flex-wrap align-items-end gap-2 fs-18 fs-sm-16 mt-3">
                  <p class="mb-0 fw-Medium text-dark2">وضعیت کاربر:</p>
-                 <p class="mb-0 fw-bold text-red">منتظر تکمیل اطلاعات</p>
+                 <p id="status" class="mb-0 fw-bold text-red">منتظر تکمیل اطلاعات</p>
                </div>
             </div>
             <div>
@@ -143,42 +143,42 @@
             </div>
           </div>
         </div>
-        <form class="mb-5 mt-4">
+        <form id="profileForm" class="mb-5 mt-4 px-2">
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">نام</label>
             <div class="max-w-512 max-w-md-100 d-flex flex-sm-row flex-column align-items-center gap-3">
-              <input placeholder="نام" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
-              <input placeholder="نام خانوادگی" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
+              <input oninput="validateForm()" id="firstname" placeholder="نام" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
+              <input oninput="validateForm()" id="lastname" placeholder="نام خانوادگی" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">شماره موبایل</label>
             <div class="max-w-512 max-w-md-100">
-              <input placeholder="شماره موبایل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <input oninput="validateForm()" id="phone" placeholder="شماره موبایل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">ایمیل</label>
             <div class="max-w-512 max-w-md-100">
-              <input placeholder="ایمیل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <input oninput="validateForm()" id="email" placeholder="ایمیل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">کد ملی</label>
             <div class="max-w-512 max-w-md-100">
-              <input placeholder="کد ملی خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <input oninput="validateForm()" id="codemeli" placeholder="کد ملی خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">کد سجام</label>
             <div class="max-w-512 max-w-md-100">
-              <input placeholder="کد سجام خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <input oninput="validateForm()" id="sajamcode" placeholder="کد سجام خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">شماره شبا</label>
             <div class="max-w-512 max-w-md-100">
-              <input placeholder="شماره شبا خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <input oninput="validateForm()" id="shabacode" placeholder="شماره شبا خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
             </div>
           </div>
         </form>
@@ -189,6 +189,7 @@
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/sidebar.js"></script>
+    <script src="../../js/validateProfile.js"></script>
 </body>
 
 </html>
