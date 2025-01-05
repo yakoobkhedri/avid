@@ -10,18 +10,25 @@ let profileForm = document.getElementById('profileForm');
 
 
 function validateForm() {
-    if(firstname.value && lastname.value && phone.value && email.value && codemeli.value && sajamcode.value && shabacode.value){
-        statusText.textContent= 'آماده سرمایه گذاری';
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const phoneNumberRegex = /^\d{11}$/;
+    const codemeliRegex = /^\d{10}$/;
+    const sajamCodeRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/;
+    const shabaCodeRegex = /^IR\d{23}$/;
+
+    if (firstname.value && lastname.value && phone.value && phoneNumberRegex.test(phone.value) && email.value && emailRegex.test(email.value) && codemeli.value && codemeliRegex.test(codemeli.value) && sajamcode.value && sajamCodeRegex.test(sajamcode.value) && shabacode.value && shabaCodeRegex.test(shabacode.value)) {
+        statusText.textContent = 'آماده سرمایه گذاری';
         statusText.style.color = '#039855';
-    }else{
-        statusText.textContent= 'منتظر تکمیل اطلاعات';
+    } else {
+        statusText.textContent = 'منتظر تکمیل اطلاعات';
         statusText.style.color = '#B42318';
     }
 }
 
 
-window.addEventListener('load' , function () {
-    profileForm.querySelectorAll('input').forEach((item)=>{
+window.addEventListener('load', function () {
+    profileForm.querySelectorAll('input').forEach((item) => {
         item.value = '';
     })
 })
