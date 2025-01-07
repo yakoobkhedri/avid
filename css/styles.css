@@ -954,9 +954,15 @@ input[type=number].error:focus {
     border: 1px solid #B42318 !important;
 }
 
-/* otp input */
-.otp-input {}
-
+/*  input validate */
+.firstSuccess,.lastSuccess,.phoneSuccess,.emailSuccess,.codemeliSuccess,.sajamcodeSuccess,.shabacodeSuccess {
+    opacity: 0;
+    visibility: hidden;
+}
+.firstSuccess.active,.lastSuccess.active,.phoneSuccess.active,.emailSuccess.active,.codemeliSuccess.active,.sajamcodeSuccess.active,.shabacodeSuccess.active {
+    opacity: 100%;
+    visibility: visible;
+}
 /* checkbox */
 .form-check-input:checked {
     background-color: #CCFBEF;

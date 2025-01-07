@@ -147,38 +147,59 @@
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">نام</label>
             <div class="max-w-512 max-w-md-100 d-flex flex-sm-row flex-column align-items-center gap-3">
-              <input oninput="validateForm()" id="firstname" placeholder="نام" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
-              <input oninput="validateForm()" id="lastname" placeholder="نام خانوادگی" class="h-44 border outline-none rounded-8 w-50 w-sm-100 px-3">
+              <div class="position-relative w-50 w-sm-100">
+                <input oninput="validateForm()" id="firstname" placeholder="نام" class="h-44 d-block w-100 border outline-none rounded-8 px-3">
+                <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 firstSuccess">
+              </div>
+              <div class="position-relative w-50 w-sm-100">
+                <input oninput="validateForm()" id="lastname" placeholder="نام خانوادگی" class="h-44 d-block w-100 border outline-none rounded-8 px-3">
+                <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 lastSuccess">
+              </div>
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">شماره موبایل</label>
             <div class="max-w-512 max-w-md-100">
-              <input oninput="validateForm()" id="phone" placeholder="شماره موبایل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <div class="position-relative w-100">
+                <input oninput="validateForm()" id="phone" placeholder="شماره موبایل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+                <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 phoneSuccess">
+              </div>
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">ایمیل</label>
             <div class="max-w-512 max-w-md-100">
-              <input oninput="validateForm()" id="email" placeholder="ایمیل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <div class="position-relative w-100">
+                <input oninput="validateForm()" id="email" placeholder="ایمیل خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+                <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 emailSuccess">
+              </div>
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">کد ملی</label>
             <div class="max-w-512 max-w-md-100">
+              <div class="position-relative w-100">
               <input oninput="validateForm()" id="codemeli" placeholder="کد ملی خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 codemeliSuccess">
+             </div>
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">کد سجام</label>
             <div class="max-w-512 max-w-md-100">
+              <div class="position-relative w-100">
               <input oninput="validateForm()" id="sajamcode" placeholder="کد سجام خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 sajamcodeSuccess">
+            </div>
             </div>
           </div>
           <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-bottom py-3">
             <label class="w-280 w-md-100 d-block fs-14 fw-Medium text-dark2">شماره شبا</label>
             <div class="max-w-512 max-w-md-100">
+              <div class="position-relative w-100">
               <input oninput="validateForm()" id="shabacode" placeholder="شماره شبا خود را وارد کنید" class="h-44 border outline-none rounded-8 w-100 px-3">
+              <img alt="icon" src="../../images/tick-circle.png" class="position-absolute start-0 top-0 mt-3 ms-2 shabacodeSuccess">
+            </div>
             </div>
           </div>
         </form>
