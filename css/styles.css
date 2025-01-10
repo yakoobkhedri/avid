@@ -123,7 +123,7 @@ a:hover {
 
 #nav ul a:hover,
 #nav ul a.active {
-    color: #156860 !important;
+    color: #3538CD !important;
     font-family: 'pelak-ExtraBold';
 }
 
@@ -172,7 +172,7 @@ a:hover {
 }
 
 #footer li a:hover {
-    color: #125D56;
+    color: #3538CD;
 }
 
 #footer a svg path,
@@ -182,7 +182,7 @@ a:hover {
 
 #footer a:hover svg path,
 .socials a:hover svg path {
-    fill: #125D56;
+    fill: #3538CD;
 }
 
 #go-to-top {
@@ -203,7 +203,7 @@ a:hover {
 }
 
 #go-to-top:hover {
-    background-color: #2d7b6b;
+    background-color: #2D31A6;
 }
 
 /* max-width */
@@ -325,8 +325,8 @@ a:hover {
     width: 64px !important;
 }
 
-.w-111 {
-    width: 111px;
+.w-126 {
+    width: 126px;
 }
 
 .w-120 {
@@ -382,8 +382,8 @@ a:hover {
     height: 56px !important;
 }
 
-.h-64 {
-    height: 64px !important;
+.h-68 {
+    height: 53px !important;
 }
 
 .h-68 {
@@ -451,7 +451,7 @@ a:hover {
 
 /* text color */
 .text-green {
-    color: #125D56;
+    color: #3538CD;
 }
 
 .text-gray {
@@ -513,13 +513,13 @@ a:hover {
 
 .button,
 .button:hover {
-    background-color: #2D7B6B;
+    background-color: #444CE7;
     color: white;
     transition: all .4s;
 }
 
 .button:hover {
-    background-color: #1A3D36;
+    background-color: #2D31A6;
 }
 
 .button2[disabled] {
@@ -654,7 +654,12 @@ input:focus {
 .bg-green3 {
     background-color: #F9FAFB;
 }
-
+.bg-green4{
+    background-color: #EEF4FF;
+}
+.bg-green5{
+    background-color: #EEF4FF;
+}
 .bg-gray {
     background-color: #F9FAFB;
 }
@@ -915,7 +920,7 @@ input::placeholder {
 
 /* The scrollbar thumb (the draggable part) */
 .hiddenScroll::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #2d7b6b, transparent);
+    background: linear-gradient(45deg, #2D31A6, transparent);
     /* Gradient effect */
     border-radius: 10px;
     /* Rounded corners */
@@ -925,7 +930,7 @@ input::placeholder {
 
 /* The scrollbar thumb on hover */
 .hiddenScroll::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #2d7b6b, transparent);
+    background: linear-gradient(45deg, #2D31A6, transparent);
     /* Darker gradient on hover */
 }
 
@@ -933,7 +938,7 @@ input::placeholder {
 * {
     scrollbar-width: thin;
     /* Thin scrollbar */
-    scrollbar-color: #2d7b6b transparent;
+    scrollbar-color: #2D31A6 transparent;
     /* Thumb and track colors */
 }
 

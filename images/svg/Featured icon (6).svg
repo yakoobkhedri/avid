@@ -1,8 +1,9 @@
 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="4" y="4" width="48" height="48" rx="24" fill="#CCFBEF"/>
-<rect x="4" y="4" width="48" height="48" rx="24" stroke="#F0FDF9" stroke-width="8"/>
-<path d="M25.1605 26.87C25.0605 26.86 24.9405 26.86 24.8305 26.87C22.4505 26.79 20.5605 24.84 20.5605 22.44C20.5605 19.99 22.5405 18 25.0005 18C27.4505 18 29.4405 19.99 29.4405 22.44C29.4305 24.84 27.5405 26.79 25.1605 26.87Z" stroke="#0E9384" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32.4093 20C34.3493 20 35.9093 21.57 35.9093 23.5C35.9093 25.39 34.4093 26.93 32.5393 27C32.4593 26.99 32.3693 26.99 32.2793 27" stroke="#0E9384" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20.1607 30.56C17.7407 32.18 17.7407 34.82 20.1607 36.43C22.9107 38.27 27.4207 38.27 30.1707 36.43C32.5907 34.81 32.5907 32.17 30.1707 30.56C27.4307 28.73 22.9207 28.73 20.1607 30.56Z" stroke="#0E9384" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M34.3398 36C35.0598 35.85 35.7398 35.56 36.2998 35.13C37.8598 33.96 37.8598 32.03 36.2998 30.86C35.7498 30.44 35.0798 30.16 34.3698 30" stroke="#0E9384" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4" y="4" width="48" height="48" rx="24" fill="#E0EAFF"/>
+<rect x="4" y="4" width="48" height="48" rx="24" stroke="#EEF4FF" stroke-width="8"/>
+<path d="M21.9002 33H34.0902C35.9902 33 36.9902 32 36.9902 30.1V18H18.9902V30.1C19.0002 32 20.0002 33 21.9002 33Z" stroke="#444CE7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 18H38" stroke="#444CE7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 38L28 36V33" stroke="#444CE7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 38L28 36" stroke="#444CE7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.5 27L26.65 24.37C26.9 24.16 27.23 24.22 27.4 24.5L28.6 26.5C28.77 26.78 29.1 26.83 29.35 26.63L32.5 24" stroke="#444CE7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
