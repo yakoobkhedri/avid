@@ -472,6 +472,9 @@ a:hover {
 .text-gray5{
     color: #77818F;
 }
+.text-gray6{
+    color: #667085;
+}
 .text-red {
     color: #B42318;
 }
@@ -612,7 +615,9 @@ input:focus {
 .border-gray {
     border: 1px solid #344054;
 }
-
+.border-gray2{
+    border: 1px solid #D0D5DD;
+}
 .border-r-3-gray {
     border-right: 3px solid #98A2B3;
 }
@@ -639,7 +644,7 @@ input:focus {
 
 /* background */
 .bg-green {
-    background-color: #2D7B6B;
+    background-color: #444CE7;
 }
 
 .bg-green2 {
@@ -657,13 +662,15 @@ input:focus {
 .bg-gray2 {
     background-color: #1D2939;
 }
-
+.bg-gray3{
+    background-color: #F2F4F7;
+}
 .bg-pink {
     background-color: #FEF3F2;
 }
 
 .bg-blue {
-    background-color: #101828;
+    background: #F9FAFB;
 }
 
 /* box shadow */
@@ -710,7 +717,7 @@ input:focus {
 
 /* input */
 input::placeholder {
-    color: #667085;
+    color: #475467;
 }
 
 /* outline-none */
@@ -795,8 +802,8 @@ input::placeholder {
 
 .accordionContent2 a:hover,
 .accordionContent2 a.active {
-    color: white;
-    border-right-color: white;
+    color: #101828;
+    border-right-color: #101828;
 }
 
 /* hover */
@@ -807,7 +814,7 @@ input::placeholder {
 }
 
 .btnHover:hover {
-    background-color: #1A3D36;
+    background-color: #2D31A6;
 }
 
 .svgHover svg path {
@@ -835,15 +842,15 @@ input::placeholder {
 #pannelList li>div:first-child.active,
 #pannelList li>div:first-child:hover,
 #pannelList li>div:first-child.active {
-    background-color: #344054;
-    color: white;
+    background-color: #EAECF0;
+    color: #101828;
 }
 
 #pannelList li a:hover svg path,
 #pannelList li a.active svg path,
 #pannelList li>div:hover svg path,
 #pannelList li>div.active svg path {
-    stroke: white;
+    stroke: #444CE7;
 }
 
 /* pagination */
