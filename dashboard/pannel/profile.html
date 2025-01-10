@@ -89,8 +89,8 @@
             <div class="pb-1 mt-3">
               <label class="fs-14 fw-Medium text-muted2">تکرار رمز عبور جدید</label>
               <div class="mt-1 position-relative inputBox">
-                <input oninput="validatePasswords(this)" id="passwordInput2" type="password" placeholder="رمز عبور جدید را دوباره اینجا بنویسید"
-                  class="outline-none border rounded-8 w-100 p-2">
+                <input oninput="validatePasswords(this)" id="passwordInput2" type="password"
+                  placeholder="رمز عبور جدید را دوباره اینجا بنویسید" class="outline-none border rounded-8 w-100 p-2">
                 <div id="togglePassword2" class="cursor-pointer position-absolute start-0 top-0 m-2 ms-3 first">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
                     viewBox="0 0 16 16">
@@ -111,6 +111,29 @@
               تایید
             </button>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- logout Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-400 mx-auto">
+      <div class="modal-content rounded-16 p-24">
+        <div class="modal-header border-0 p-0 align-items-start">
+          <div>
+            <img alt="icon" src="../../images/Featured icon.png">
+            <h1 class="modal-title fw-semiBold fs-18 mt-2" id="logoutModalLabel">خروج</h1>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto mt-1 fs-14" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body border-0 p-0">
+          <p class="mt-2 text-gray3">آیا مطمئن هستید که می خواهید خارج شوید؟</p>
+          <button id="submitBtn"
+            class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-5">
+            تایید
+          </button>
         </div>
       </div>
     </div>
@@ -155,9 +178,11 @@
                 stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <p class="mb-0">گردش مالی </p>
-            <svg class="me-auto" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1.5L6 6.5L11 1.5" fill="#667085"/>
-              <path d="M1 1.5L6 6.5L11 1.5" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="me-auto" width="12" height="8" viewBox="0 0 12 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5L6 6.5L11 1.5" fill="#667085" />
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
           <div class="accordionContent2 fs-12 fw-semiBold pe-4">
@@ -201,7 +226,7 @@
             <p class="mb-0">پشتیبانی</p>
           </a>
         </li>
-        <li class="py-1">
+        <li data-bs-toggle="modal" data-bs-target="#logoutModal" class="py-1">
           <a class="d-flex align-items-center gap-3 fs-14 fw-semiBold text-gray6 p-10 rounded-8">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
