@@ -130,10 +130,17 @@
         </div>
         <div class="modal-body border-0 p-0">
           <p class="mt-2 text-gray3">آیا مطمئن هستید که می خواهید خارج شوید؟</p>
-          <button id="submitBtn"
-            class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-5">
+          <div class="d-flex align-items-center gap-2 mt-4">
+            <button data-bs-dismiss="modal"
+            aria-label="Close"
+              class="rounded-8 cursor-pointer gray-hover transition bg-white text-muted2 fw-semiBold text-center px-3 h-48 w-50 border-gray2 d-flex align-items-center justify-content-center">
+              لغو
+            </button>
+            <button
+            class="rounded-8 button cursor-pointer fw-semiBold text-center px-3 h-48 w-50 border-0 d-flex align-items-center justify-content-center">
             تایید
           </button>
+          </div>
         </div>
       </div>
     </div>

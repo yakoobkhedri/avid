@@ -107,7 +107,9 @@ header {
     padding: 0 20px;
     transition: all .4s;
 }
-
+.transition{
+    transition: all .4s;
+}
 a.link2 {
     color: #475467 !important;
 }
@@ -207,11 +209,14 @@ a:hover {
 }
 
 /* max-width */
+.max-w-241 {
+    max-width: 241px;
+    width: 100%;
+}
 .max-w-358 {
     max-width: 358px;
     width: 100%;
 }
-
 .max-w-400 {
     max-width: 400px;
     width: 100%;
@@ -453,7 +458,12 @@ a:hover {
 .text-green {
     color: #3538CD;
 }
-
+.text-green2{
+    color: #027A48;
+}
+.text-blue{
+    color: #175CD3;
+}
 .text-gray {
     color: #F2F4F7;
 }
@@ -482,7 +492,9 @@ a:hover {
 .text-red2 {
     color: #F04438;
 }
-
+.text-red3{
+    color: #C11574;
+}
 .text-dark2 {
     color: #101828;
 }
@@ -660,6 +672,9 @@ input:focus {
 .bg-green5{
     background-color: #EEF4FF;
 }
+.bg-green6{
+    background-color:#ECFDF3
+}
 .bg-gray {
     background-color: #F9FAFB;
 }
@@ -673,11 +688,15 @@ input:focus {
 .bg-pink {
     background-color: #FEF3F2;
 }
-
+.bg-pink2{
+    background-color: #FDF2FA;
+}
 .bg-blue {
     background: #F9FAFB;
 }
-
+.bg-blue2{
+    background: #EFF8FF
+}
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 1px 2px 0px #1018280D;
@@ -711,7 +730,9 @@ input:focus {
 .rounded-10 {
     border-radius: 10px;
 }
-
+.rounded-12 {
+    border-radius: 12px;
+}
 .rounded-16 {
     border-radius: 16px;
 }
@@ -827,7 +848,7 @@ input::placeholder {
 }
 
 .svgHover:hover svg path {
-    stroke: #2D7B6B;
+    stroke: #444ce7;
 }
 
 /* dashboard */
