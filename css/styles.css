@@ -843,14 +843,16 @@ input::placeholder {
     background-color: #2D31A6;
 }
 
-.svgHover svg path {
+.svgHover svg path,.hover-red path {
     transition: all .4s;
 }
 
 .svgHover:hover svg path {
     stroke: #444ce7;
 }
-
+.hover-red:hover path{
+    stroke: red;
+}
 /* dashboard */
 #pannelList li a,
 #pannelList li>div {
@@ -1162,6 +1164,9 @@ input[type=number].error:focus {
 }
 
 @media (max-width: 576px) {
+    .w-sm-26 {
+        width: 26px;
+    }
     .w-sm-36 {
         width: 36px;
     }
@@ -1173,7 +1178,9 @@ input[type=number].error:focus {
     .w-sm-128 {
         width: 128px;
     }
-
+    .h-sm-26 {
+        height: 26px;
+    }
     .h-sm-36 {
         height: 36px;
     }
@@ -1185,7 +1192,9 @@ input[type=number].error:focus {
     .border-sm-gray {
         border: 1px solid #D0D5DD;
     }
-
+    .fs-sm-14 {
+        font-size: 14px;
+    }
     .fs-sm-16 {
         font-size: 16px;
     }
