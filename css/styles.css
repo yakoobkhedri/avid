@@ -213,6 +213,10 @@ a:hover {
     max-width: 241px;
     width: 100%;
 }
+.max-w-280 {
+    max-width: 280px;
+    width: 100%;
+}
 .max-w-358 {
     max-width: 358px;
     width: 100%;
@@ -226,7 +230,10 @@ a:hover {
     max-width: 480px;
     width: 100%;
 }
-
+.max-w-485 {
+    max-width: 485px;
+    width: 100%;
+}
 .max-w-512 {
     max-width: 512px;
     width: 100%;
@@ -313,7 +320,6 @@ a:hover {
 .w-24 {
     width: 24px;
 }
-
 .w-40 {
     width: 40px;
 }
@@ -341,7 +347,9 @@ a:hover {
 .w-158 {
     width: 158px !important;
 }
-
+.w-170 {
+    width: 170px !important;
+}
 .w-202 {
     width: 202px;
 }
@@ -484,6 +492,12 @@ a:hover {
 }
 .text-gray6{
     color: #667085;
+}
+.text-gray7{
+    color: #98A2B3;
+}
+.text-gray8{
+    color: #6C737F;
 }
 .text-red {
     color: #B42318;
@@ -637,7 +651,13 @@ input:focus {
 .border-b-green {
     border-bottom: 3px solid #2D7B6B;
 }
-
+.border-x-gray{
+    border-left: 1px solid #D0D5DD;
+    border-right: 1px solid #D0D5DD;
+}
+.border-dashed-gray{
+    border: 2px dashed #D0D5DD;
+}
 /* after */
 .afterLine {
     position: relative;
@@ -736,7 +756,9 @@ input:focus {
 .rounded-16 {
     border-radius: 16px;
 }
-
+.rounded-20 {
+    border-radius: 20px;
+}
 .rounded-32 {
     border-radius: 32px;
 }
@@ -752,6 +774,9 @@ input::placeholder {
 }
 
 /* opacity */
+.opacity-none {
+    opacity: 0;
+}
 .opacity-50 {
     opacity: 50%;
 }
@@ -852,6 +877,12 @@ input::placeholder {
 }
 .hover-red:hover path{
     stroke: red;
+}
+.cats > div:hover,.cats > div.active{
+    background-color: #F9FAFB;
+}
+.cats > div.active img{
+   display: block !important;
 }
 /* dashboard */
 #pannelList li a,
