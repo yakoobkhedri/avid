@@ -157,9 +157,9 @@
         </a>
         <p class="mb-0 text-dark">ایجاد تیکت جدید</p>
       </div>
-      <div class="mt-4 pt-1">
+      <div class="mt-4 mb-5 pt-1">
         <form>
-          <div class="d-flex align-items-start gap-3 py-3 border-bottom">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 py-3 border-bottom">
             <p class="fs-14 fw-Medium text-gray2 mb-0 max-w-280">انتخاب دسته</p>
             <div class="rounded-8 overflow-hidden d-flex align-items-center border-gray2 fs-14 fw-Medium cats max-w-512">
               <div class="active d-flex align-items-center justify-content-center gap-2 text-gray7 cursor-pointer position-relative w-170 h-40 flex-grow-1">
@@ -179,16 +179,17 @@
               </div>
             </div>
           </div>
-          <div class="d-flex align-items-start gap-3 py-3 border-bottom">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 py-3 border-bottom">
             <p class="fs-14 fw-Medium text-gray2 mb-0 max-w-280">عنوان</p>
             <input placeholder="عنوان تیکت خود را وارد کنید" class="border-gray2 shadow-1 h-44 px-2 rounded-8 outline-none max-w-512">
           </div>
-          <div class="d-flex align-items-start gap-3 py-3 border-bottom">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 py-3 border-bottom">
             <p class="fs-14 fw-Medium text-gray2 mb-0 max-w-280">توضیحات</p>
             <textarea rows="5" placeholder="متن توضیحات را وارد نمایید..." class="border-gray2 shadow-1 resize-none p-2 rounded-8 outline-none max-w-512"></textarea>
           </div>
-          <div class="border-dashed-gray px-4 py-5 mt-5 rounded-20">
-            <div class="max-w-485 mx-auto">
+          <div class="flex-column flex-md-row d-flex align-items-start gap-3 border-dashed-gray px-4 py-5 mt-5 rounded-20">
+            <p class="fs-14 fw-Medium text-gray2 mb-0 max-w-280 text-white d-none d-md-block">آپلود</p>
+            <div class="max-w-485">
               <div class="d-flex align-items-center gap-3 cursor-pointer">
                 <img alt="icon" src="../../images/svg/Avatar.svg" class="flex-shrink-0">
                 <div>
@@ -196,10 +197,22 @@
                   <p class="mb-0 fs-14 text-gray8">(SVG, JPG, PNG, or gif maximum 80x80)</p>
                 </div>
               </div>
-              <div class="mt-5 row mx-0 g-4">
+              <div class="mt-4 row mx-0 g-4">
                 <div class="col-md-6">
                  <div class="rounded-20 border-gray2 overflow-hidden">
-                   <img alt="img" src="../../images/dashboard/Number input.png" class="h-96">
+                   <img alt="img" src="../../images/dashboard/Number input.png" class="h-96 w-100">
+                   <div class="p-3 d-flex align-items-start justify-content-between gap-2">
+                     <img alt="icon" src="../../images/svg/trash.svg" class="flex-shrink-0 cursor-pointer">
+                     <div dir="ltr">
+                      <p class="mb-0 fs-14 fw-Medium">Screenshot 2025-01...</p>
+                      <p class="mb-0 fs-14 text-muted text-start">3 Mb</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="col-md-6">
+                 <div class="rounded-20 border-gray2 overflow-hidden">
+                   <img alt="img" src="../../images/dashboard/Number input.png" class="h-96 w-100">
                    <div class="p-3 d-flex align-items-start justify-content-between gap-2">
                      <img alt="icon" src="../../images/svg/trash.svg" class="flex-shrink-0 cursor-pointer">
                      <div dir="ltr">
@@ -211,6 +224,10 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="d-flex align-items-center gap-2 mt-4">
+            <div class="rounded-8 border-gray2 shadow-1 py-2 px-4 cursor-pointer gray-hover transition fw-semiBold">انصراف</div>
+            <button class="py-2 px-4 btnHover bg-green text-white fw-semiBold shadow-1 border-0 rounded-8">ثبت</button>
           </div>
         </form>
       </div>
