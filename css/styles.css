@@ -116,7 +116,7 @@ a.link2 {
 
 #nav a:hover,
 a:hover {
-    color: #156860;
+    color: #444ce7;
 }
 
 #nav ul a {
@@ -365,7 +365,9 @@ a:hover {
 .w-320 {
     width: 320px;
 }
-
+.w-650 {
+    width: 650px;
+}
 /* height */
 .h-8 {
     height: 8px;
@@ -433,7 +435,9 @@ a:hover {
 .z-20 {
     z-index: 20;
 }
-
+.z-30 {
+    z-index: 30;
+}
 /* padding */
 .p-10 {
     padding: 10px;
@@ -586,6 +590,12 @@ input:focus {
 }
 
 /* right */
+.right-118 {
+    right: 118px;
+}
+.-right-184 {
+    right: -184px;
+}
 .-right-212 {
     right: -212px;
 }
@@ -602,7 +612,9 @@ input:focus {
 .-top-97 {
     top: -97px;
 }
-
+.-top-99{
+    top: -99px;
+}
 .-top-173 {
     top: -173px;
 }
@@ -611,10 +623,12 @@ input:focus {
     top: -184px;
 }
 
+.-top-212{
+    top: -212px;
+}
 .-top-221 {
     top: -221px;
 }
-
 /* bottom */
 .-bottom-96 {
     bottom: -96px;
@@ -682,7 +696,7 @@ input:focus {
 }
 
 .bg-green2 {
-    background-color: #F0FDF9;
+    background-color: #EEF4FF;
 }
 
 .bg-green3 {
@@ -782,7 +796,12 @@ input::placeholder {
 .opacity-50 {
     opacity: 50%;
 }
-
+.opacity-40 {
+    opacity: 40%;
+}
+.opacity-30 {
+    opacity: 30%;
+}
 /* error */
 .otp input.error {
     border: 1px solid #B42318;
