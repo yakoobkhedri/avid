@@ -1035,13 +1035,13 @@ input[type=number].error:focus {
 }
 /* checkbox */
 .form-check-input:checked {
-    background-color: #CCFBEF;
-    border-color: #0E9384;
+    background-color: #444ce732;
+    border-color: #444ce7;
 }
 
 .form-check-input:focus {
-    box-shadow: 0px 0px 0px 4px #DEEEEB;
-    border-color: #0E9384;
+    box-shadow: 0px 0px 0px 4px #444ce73c;
+    border-color: #444ce7;
 }
 
 .form-check-input:checked[type="checkbox"] {
