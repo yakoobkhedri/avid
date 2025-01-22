@@ -603,6 +603,9 @@ input:focus {
 }
 
 /* right */
+.right-54{
+    right: 54%;
+}
 .right-118 {
     right: 118px;
 }
@@ -617,7 +620,9 @@ input:focus {
 .top-7 {
     top: 7px;
 }
-
+.top-39{
+    top: 39%;
+}
 .-top-89 {
     top: -89px;
 }
@@ -854,7 +859,10 @@ input::placeholder {
 .successMessage div.success img {
     display: block;
 }
-
+/* filter */
+.grayscale-1{
+    filter: grayscale(1);
+}
 /* accordion */
 .accordionBtn div p:last-child,
 .accordionBtn.active div p:first-child {
