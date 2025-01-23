@@ -159,7 +159,7 @@
       </div>
       <div class="mt-4 pt-1">
         <form class="mt-4 flex-wrap d-flex align-items-center gap-3">
-          <div class="d-flex align-items-center gap-1 rounded-12 shadow-5 h-44 bg-white border p-10 flex-grow-1">
+          <div class="d-flex align-items-center gap-1 rounded-12 shadow-2 h-44 bg-white border p-10 flex-grow-1">
             <button class="bg-transparent border-0">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -168,18 +168,28 @@
               </svg>
             </button>
             <input type="search" placeholder="جستجو"
-              class="text-gray3 outline-none border-0 flex-grow-1 w-100 bg-transparent">
+              class="placeholder-gray2 outline-none border-0 flex-grow-1 w-100 bg-transparent">
           </div>
-          <select class="rounded-8 shadow-5 h-44 bg-white border p-10 flex-grow-1 max-w-241 max-w-md-100 w-100">
-            <option>قدیمی ترین</option>
-            <option>قدیمی ترین</option>
-          </select>
-          <select class="rounded-8 shadow-5 h-44 bg-white border p-10 flex-grow-1 max-w-241 max-w-md-100 w-100">
+          <div class="max-w-241 max-w-md-100 flex-grow-1 w-100 position-relative">
+            <div class="rounded-8 shadow-2 h-44 bg-white border px-14 cursor-pointer d-flex align-items-center justify-content-between">
+              <p class="mb-0">قدیمی ترین</p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="border-gray2 rounded-b-8 overflow-hidden text-dark2 position-absolute w-100 top-39p end-0 start-0 bg-white">
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">جدیدترین</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">قدیمی‌ترین</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">بالاترین مبلغ</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">کمترین مبلغ</div>
+            </div>
+          </div>
+          <select class="rounded-8 shadow-2 h-44 bg-white border p-10 flex-grow-1 max-w-241 max-w-md-100 w-100">
             <option>انتخاب طرح</option>
             <option>انتخاب طرح</option>
           </select>
         </form>
-        <div class="mb-4 mt-5 rounded-12 shadow-5 border overflow-hidden">
+        <div class="mb-4 mt-5 rounded-12 shadow-2 border overflow-hidden">
           <div>
             <div class="row mx-0 fs-12 fw-Medium text-gray3 bg-blue d-none d-md-flex">
               <div class="col-1 py-2 text-center">ردیف</div>
