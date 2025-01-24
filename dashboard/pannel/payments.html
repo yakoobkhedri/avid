@@ -159,27 +159,44 @@
       </div>
       <div class="mt-4 pt-1">
         <form class="mt-4 flex-wrap d-flex align-items-center gap-3">
-          <div class="d-flex align-items-center gap-1 rounded-12 shadow-5 h-44 bg-white border p-10 flex-grow-1">
+          <div class="d-flex align-items-center gap-1 rounded-12 shadow-2 h-44 bg-white border p-10 flex-grow-1">
             <button class="bg-transparent border-0">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z"
-                  stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </button>
-            <input type="search" placeholder="جستجو"
-              class="text-gray3 outline-none border-0 flex-grow-1 w-100 bg-transparent">
+            <input type="search" placeholder="جستجو" class="placeholder-gray2 outline-none border-0 flex-grow-1 w-100 bg-transparent">
           </div>
-          <select class="rounded-8 shadow-5 h-44 bg-white border p-10 flex-grow-1 max-w-241 max-w-md-100 w-100">
-            <option>قدیمی ترین</option>
-            <option>قدیمی ترین</option>
-          </select>
-          <select class="rounded-8 shadow-5 h-44 bg-white border p-10 flex-grow-1 max-w-241 max-w-md-100 w-100">
-            <option>انتخاب طرح</option>
-            <option>انتخاب طرح</option>
-          </select>
+          <div class="max-w-241 max-w-md-100 flex-grow-1 w-100 position-relative">
+            <div class="rounded-8 shadow-2 accordionBtn3 h-44 bg-white border px-14 cursor-pointer d-flex align-items-center justify-content-between">
+              <p class="mb-0">قدیمی ترین</p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="accordionContent3 border-gray2 rounded-b-8 overflow-hidden text-dark2 position-absolute w-100 top-43 end-0 start-0 bg-white">
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">جدیدترین</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">قدیمی‌ترین</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">بالاترین مبلغ</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">کمترین مبلغ</div>
+            </div>
+          </div>
+          <div class="max-w-241 max-w-md-100 flex-grow-1 w-100 position-relative">
+            <div class="rounded-8 shadow-2 accordionBtn3 h-44 bg-white border px-14 cursor-pointer d-flex align-items-center justify-content-between">
+              <p class="mb-0">انتخاب طرح</p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="accordionContent3 border-gray2 rounded-b-8 overflow-hidden text-dark2 position-absolute w-100 top-43 end-0 start-0 bg-white">
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">طرح اول</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">طرح دوم</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">طرح سوم</div>
+              <div class="py-12 px-16 cursor-pointer gray-hover transition">طرح چهارم</div>
+            </div>
+          </div>
         </form>
-        <div class="my-5 rounded-12 shadow-5 border overflow-hidden">
+        <div class="my-5 rounded-12 shadow-2 border overflow-hidden">
           <div>
             <div class="row mx-0 fs-12 fw-Medium text-gray3 bg-blue d-none d-md-flex">
               <div class="col-1 py-2 text-center">ردیف</div>
@@ -468,6 +485,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../../js/sidebar.js"></script>
+  <script src="../../js/accordion.js"></script>
 </body>
 
 </html>

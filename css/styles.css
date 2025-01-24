@@ -69,6 +69,7 @@ header {
     font-family: 'pelak-semiBold';
     z-index: 30;
     transition: all .4s;
+    z-index: 32;
 }
 
 #navbar,
@@ -161,14 +162,22 @@ a:hover {
     max-width: 800px;
     margin: 30px auto;
 }
-
+.col-lg-6 .max-w-358 img[alt='logo']{
+    width: 157px;
+}
+#sidebar img[alt='logo']{
+    width: 126px;
+}
 #footer {
     background-color: #F9FAFB;
     padding-top: 60px;
     font-weight: 300;
     font-size: 14px;
 }
-
+footer img[alt='logo']{
+    width: 126px;
+    margin-bottom: 13px;
+}
 #footer li {
     padding: 2px 0;
 }
@@ -637,8 +646,8 @@ input:focus {
 .top-39{
     top: 39%;
 }
-.top-39p{
-    top: 39px;
+.top-43{
+    top: 43px;
 }
 .-top-89 {
     top: -89px;
@@ -902,14 +911,15 @@ input::placeholder {
 }
 
 .accordionContent,
-.accordionContent2 {
+.accordionContent2,.accordionContent3 {
     transition: all .4s;
     max-height: 0;
     overflow: hidden;
 }
 
 .accordionContent.active,
-.accordionContent2.active {
+.accordionContent2.active,
+.accordionContent3.active {
     max-height: 2000px;
 }
 
@@ -918,7 +928,18 @@ input::placeholder {
     color: #101828;
     border-right-color: #101828;
 }
-
+.accordionBtn3.active{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.accordionContent3{
+    border: 1px solid transparent;
+    opacity: 0;
+}
+.accordionContent3.active{
+    border: 1px solid #D0D5DD;
+    opacity: 100%;
+}
 /* hover */
 .btnHover {
     transition: all .4s;
