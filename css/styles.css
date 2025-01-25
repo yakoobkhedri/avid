@@ -935,6 +935,7 @@ input::placeholder {
 .accordionContent3{
     border: 1px solid transparent;
     opacity: 0;
+    z-index: 10;
 }
 .accordionContent3.active{
     border: 1px solid #D0D5DD;
