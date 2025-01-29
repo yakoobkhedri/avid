@@ -163,10 +163,10 @@ a:hover {
     margin: 30px auto;
 }
 .col-lg-6 .max-w-358 img[alt='logo']{
-    width: 157px;
+    width: 189px;
 }
 #sidebar img[alt='logo']{
-    width: 126px;
+    width: 168px;
 }
 #footer {
     background-color: #F9FAFB;
@@ -175,8 +175,11 @@ a:hover {
     font-size: 14px;
 }
 footer img[alt='logo']{
-    width: 126px;
+    width: 186px;
     margin-bottom: 13px;
+}
+footer p,.accordionContent p{
+    text-align: justify;
 }
 #footer li {
     padding: 2px 0;
@@ -458,6 +461,10 @@ footer img[alt='logo']{
 .p-10 {
     padding: 10px;
 }
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .py-12{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -465,6 +472,10 @@ footer img[alt='logo']{
 .px-14{
     padding-left: 14px;
     padding-right: 14px;
+}
+.px-15{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .px-16{
     padding-left: 16px;
