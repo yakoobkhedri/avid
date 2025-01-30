@@ -110,8 +110,9 @@ header {
 #nav a {
     color: white;
     font-weight: 500;
-    padding: 0 20px;
+    padding: 0 10px;
     transition: all .4s;
+    font-size: 15px;
 }
 .transition{
     transition: all .4s;
