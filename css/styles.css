@@ -512,7 +512,10 @@ footer p,.accordionContent p{
 .mt-155 {
     margin-top: 155px;
 }
-
+/* text align */
+.text-justify{
+    text-align: justify;
+}
 /* text color */
 .text-green {
     color: #3538CD;
