@@ -64,7 +64,21 @@ a {
     font-family: 'pelak-Bold';
     font-weight: 700;
 }
-
+.dropDownContent{
+    transition: all .4s;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropDownContent.active{
+    transition: all .4s;
+    top: 46px;
+    opacity: 100%;
+    visibility: visible;
+}
+.dropDownContent > ul{
+    margin-top: 0.5rem !important;
+}
 header {
     font-family: 'pelak-semiBold';
     z-index: 30;
@@ -338,6 +352,9 @@ footer p,.accordionContent p{
 .w-24 {
     width: 24px;
 }
+.w-26 {
+    width: 26px;
+}
 .w-40 {
     width: 40px;
 }
@@ -374,6 +391,9 @@ footer p,.accordionContent p{
 .w-202 {
     width: 202px;
 }
+.w-215 {
+    width: 215px;
+}
 
 .w-280 {
     width: 280px;
@@ -401,7 +421,9 @@ footer p,.accordionContent p{
 .h-24 {
     height: 24px;
 }
-
+.h-26 {
+    height: 26px;
+}
 .h-40 {
     height: 40px;
 }
@@ -662,8 +684,20 @@ input:focus {
 }
 
 /* top */
+.top-6 {
+    top: 6px;
+}
 .top-7 {
     top: 7px;
+}
+.top-8 {
+    top: 8px;
+}
+.top-12 {
+    top: 12px;
+}
+.top-28{
+    top: 28px;
 }
 .top-39{
     top: 39%;
@@ -1233,8 +1267,7 @@ input[type=number].error:focus {
 }
 
 @media (min-width: 992px) {
-
-
+    
     #nav li {
         float: right;
     }
@@ -1255,10 +1288,15 @@ input[type=number].error:focus {
         margin-bottom: 0;
     }
 }
-
+@media (max-width: 992px) {
+    
+    .-top-lg-19{
+        top: -19px;
+    }
+}
 @media (max-width: 992px) {
     .mb-md-65 {
-        margin-bottom: 65px;
+        margin-bottom: 40px;
     }
 
     .position-lg-static {
@@ -1344,6 +1382,9 @@ input[type=number].error:focus {
 
     .border-sm-gray {
         border: 1px solid #D0D5DD;
+    }
+    .fs-sm-12 {
+        font-size: 12px;
     }
     .fs-sm-14 {
         font-size: 14px;
