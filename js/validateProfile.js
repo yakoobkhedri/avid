@@ -12,7 +12,7 @@ let profileForm = document.getElementById('profileForm');
 function validateForm() {
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const phoneNumberRegex = /^\d{11}$/;
+    const phoneNumberRegex = /^[0-9\u06F0-\u06F9]{11}$/;
     const codemeliRegex = /^\d{10}$/;
     const sajamCodeRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/;
     const shabaCodeRegex = /^IR\d{23}$/;

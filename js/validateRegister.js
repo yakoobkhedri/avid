@@ -21,7 +21,7 @@ checkbox2.addEventListener('change', () => {
     checkbox1.checked = checkbox2.checked;
 });
 
-const phoneRegex = /^\d{11}$/;  // 11 digits, numeric
+const phoneRegex = /^[0-9\u06F0-\u06F9]{11}$/;  // 11 digits, numeric
 const passwordLengthRegex = /^.{8,}$/;  // At least 8 characters
 const containsNumberRegex = /\d/;
 const specialCharRegex = /[!@#$%&]/;  // At least one special character (!, @, #, $, %, &)
