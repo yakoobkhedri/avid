@@ -6,7 +6,7 @@ const submitButton = document.getElementById('submitBtn');
 
 // Function to validate the phone number
 function validatePhoneNumber(phoneNumber) {
-    const regex = /^\d{11}$/; // Regex to match exactly 11 digits
+    const regex = /^[0-9\u06F0-\u06F9]{11}$/; // Regex to match exactly 11 digits
     return regex.test(phoneNumber);
 }
 
