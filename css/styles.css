@@ -1089,6 +1089,7 @@ input::placeholder {
     transform: rotateY(180deg);
     background: #4553a0;
     padding: 29px;
+    padding-left: 9px;
   }
 /* dashboard */
 #pannelList li a,
