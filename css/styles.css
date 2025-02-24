@@ -670,6 +670,9 @@ input:focus {
 }
 
 /* right */
+.right-14{
+    right: 14px;
+}
 .right-54{
     right: 54%;
 }
