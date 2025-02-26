@@ -38,6 +38,7 @@ body {
     font-family: 'pelak-Regular';
     user-select: none;
     overflow-x: hidden;
+    direction: rtl;
 }
 
 a {
@@ -98,11 +99,10 @@ header {
     color: white;
 }
 
-#toggler {
+#toggler,#toggler2 {
     position: absolute;
     left: 22px;
     top: 15px;
-    color: white;
     cursor: pointer;
     font-size: 30px;
     margin-top: 17px;
@@ -119,6 +119,7 @@ header {
     line-height: 2.5em;
     padding-top: 30px;
     transition-duration: 0.4s;
+    z-index: 99;
 }
 
 #nav a {

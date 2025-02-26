@@ -73,8 +73,6 @@ new SmoothScroll('a[href*="#"]', {
   speed: 1000
 });
 
-new WOW().init();
-
 $('#toggler').on('click', function () {
   var nav = $('#nav');
   var toggler = $('#toggler i');
@@ -86,17 +84,27 @@ $('#toggler').on('click', function () {
     toggler.removeClass('fa-bars').addClass('fa-times');
   }
 });
-
+$('#toggler2').on('click', function () {
+  var nav = $('#nav');
+  var toggler2 = $('#toggler2 i');
+  if (nav.css('right') === '0px') {
+    nav.css('right', '-240px');
+    toggler2.removeClass('fa-times').addClass('fa-bars');
+  } else {
+    nav.css('right', '0');
+    toggler2.removeClass('fa-bars').addClass('fa-times');
+  }
+});
 $(window).on('scroll load', function () {
 
   if ($(window).scrollTop() > 120) {
     $('#header').css('background-color', 'white').css('border-bottom', '1px solid lightgray');
     $('#header ul  li  a').css('color', '#475467');
-    $('#toggler').css('color', '#475467');
+    $('#toggler2').css('color', '#475467');
   } else {
     $('#header').css('background-color', 'rgba(0 , 0 , 0 , 0)').css('border-bottom', '1px solid transparent');
     $('#header ul  li  a').css('color', 'white');
-    $('#toggler').css('color', 'white');
+    $('#toggler2').css('color', 'white');
   }
 
   if ($(window).scrollTop() > 250) {
