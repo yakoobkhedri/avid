@@ -1301,7 +1301,12 @@ input[type=number].error:focus {
     a.link2 {
         color: white !important;
     }
-
+    #navbar, #navbar2 {
+      padding-top: 0;
+    }
+    #toggler, #toggler2 {
+        top: -2px;
+    }
     /* overlay */
     #overlay {
         position: fixed;
