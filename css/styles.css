@@ -240,7 +240,11 @@ footer p,.accordionContent p{
 #go-to-top:hover {
     background-color: #2D31A6;
 }
-
+/* min height */
+.min-h-445{
+    min-height: 445px;
+    height: 100%;
+}
 /* max-width */
 .max-w-241 {
     max-width: 241px;
@@ -248,6 +252,10 @@ footer p,.accordionContent p{
 }
 .max-w-280 {
     max-width: 280px;
+    width: 100%;
+}
+.max-w-330 {
+    max-width: 330px;
     width: 100%;
 }
 .max-w-358 {
@@ -258,7 +266,10 @@ footer p,.accordionContent p{
     max-width: 400px;
     width: 100%;
 }
-
+.max-w-430 {
+    max-width: 430px;
+    width: 100%;
+}
 .max-w-480 {
     max-width: 480px;
     width: 100%;
