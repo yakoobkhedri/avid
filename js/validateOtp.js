@@ -2,7 +2,7 @@
 // otp
 
 const otpInputs = document.querySelectorAll('.otp-input');
-const submitButton = document.getElementById('submitOtp');
+const submitButton3 = document.getElementById('submitOtp');
 
 otpInputs.forEach((input, index) => {
     input.addEventListener('input', (event) => {
@@ -44,7 +44,7 @@ otpInputs.forEach((input, index) => {
 
 function checkAllInputsFilled() {
     const allFilled = Array.from(otpInputs).every(input => input.value);
-    submitButton.disabled = !allFilled;
+    submitButton3.disabled = !allFilled;
 }
 
 document.getElementById('otpForm').addEventListener('submit', (event) => {
@@ -62,7 +62,7 @@ document.getElementById('otpForm').addEventListener('submit', (event) => {
 });
 
 window.addEventListener('load' , function () {
-    submitButton.disabled = 'true';
+    submitButton3.disabled = 'true';
     Array.from(document.getElementsByClassName('otp-input')).forEach((item)=>{
         item.value = '';
         item.disabled = 'true';

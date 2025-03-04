@@ -1,6 +1,6 @@
 let firstname = document.getElementById('firstname');
 let lastname = document.getElementById('lastname');
-let phone = document.getElementById('phone');
+let phone = document.getElementById('phone2');
 let email = document.getElementById('email');
 let codemeli = document.getElementById('codemeli');
 let sajamcode = document.getElementById('sajamcode');

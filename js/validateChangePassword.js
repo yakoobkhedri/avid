@@ -2,7 +2,7 @@ const togglePassword = document.getElementById('togglePassword');
 const togglePassword2 = document.getElementById('togglePassword2');
 const passwordInput = document.getElementById('passwordInput');
 const passwordInput2 = document.getElementById('passwordInput2');
-const submitButton = document.getElementById('submitBtn');
+const submitButton2 = document.getElementById('submitBtn2');
 let isSame = false;
 
 const passwordLengthRegex = /^.{8,}$/;  // At least 8 characters
@@ -14,11 +14,11 @@ function validatePasswords(e) {
     if (event.target.value === passwordInput.value) {
         isSame = true;
         document.querySelector('.sameError').style.display = 'none';
-        submitButton.disabled = false;
+        submitButton2.disabled = false;
     } else {
         isSame = false;
         document.querySelector('.sameError').style.display = 'block';
-        submitButton.disabled = true;
+        submitButton2.disabled = true;
     }
     console.log(isSame)
 }
@@ -64,7 +64,7 @@ function validateForm() {
         specialCharRegex.test(passwordInput.value)
 
         // Enable the submit button if all fields are valid
-        submitButton.disabled = !(passwordValid) && !isSame;
+        submitButton2.disabled = !(passwordValid) && !isSame;
     }
 
 
@@ -127,7 +127,7 @@ togglePassword2.addEventListener('click', () => {
 });
 
 window.addEventListener('load' , function () {
-    submitButton.disabled = 'true';
+    submitButton2.disabled = 'true';
     passwordInput.value= '';
 
 })
