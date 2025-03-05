@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <!-- sajam Modal -->
+  <!-- code meli Modal -->
   <div class="modal fade" id="sajamModal" tabindex="-1" aria-labelledby="sajamModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-400 mx-auto">
       <div class="modal-content rounded-16 p-24">
@@ -54,23 +54,22 @@
             aria-label="Close"></button>
         </div>
         <div class="modal-body border-0 p-0">
-          <div class="max-w-358 mx-auto py-4">
+          <form id="nationalCodeForm" class="max-w-358 mx-auto py-4">
             <img alt="logo" src="../../images/Logo (2).png" class="img-fluid mx-auto w-190 d-block">
-            <h4 class="text-green2 text-center fw-semiBold mt-3">دریافت اطلاعات سجام</h4>
-            <p class="text-center text-muted fs-14">برای دریافت اطلاعات شماره موبایل خود را وارد کنید.</p>
-            <form class="mt-4">
+            <p class="text-center text-muted fs-14">کد ملی خود را وارد کنید.</p>
+            <div class="mt-4">
               <div>
-                 <label class="fs-14 fw-Medium text-muted2">شماره موبایل</label>
-                 <input id="phone" placeholder="برای مثال ۰۹۱۲۳۴۵۶۷۲۰" class="ltrInput rounded-8 border outline-none w-100 mt-1 p-2">
+                 <label class="fs-14 fw-Medium text-muted2"> کد ملی</label>
+                 <input oninput="checkNationalCode()" id="codemeli" placeholder="برای مثال 2840172429" class="ltrInput rounded-8 border outline-none w-100 mt-1 p-2">
               </div>
-               <button data-bs-toggle="modal" data-bs-target="#sajamOtpModal" disabled="" id="submitBtn" class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
+               <button data-bs-toggle="modal" data-bs-target="#sajamOtpModal" disabled="" id="submitButton" class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
                  ادامه
                </button>
                <!-- <button data-bs-toggle="modal" data-bs-target="#noSajamModal" disabled="" id="submitBtn" class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-4">
                 ادامه
               </button> -->
-            </form>
-         </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -379,9 +378,7 @@
 
   <script src="../../js/bootstrap.bundle.min.js"></script>
   <script src="../../js/sidebar.js"></script>
-  <script src="../../js/validateProfile.js"></script>
-  <script src="../../js/validatePhone.js"></script>
-  <script src="../../js/validateOtp.js"></script>
+  <script src="../../js/sajam.js"></script>
 </body>
 
 </html>

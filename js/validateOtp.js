@@ -48,7 +48,7 @@ function checkAllInputsFilled() {
 }
 
 document.getElementById('otpForm').addEventListener('submit', (event) => {
-    event.preventDefault();
+    // event.preventDefault();
 
     // Collect OTP value
     const otp = Array.from(otpInputs).map(input => input.value).join('');
