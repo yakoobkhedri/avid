@@ -14,104 +14,6 @@
 
 <body>
 
-  <!-- changePassword Modal -->
-  <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered max-w-400 mx-auto">
-      <div class="modal-content rounded-16 p-24">
-        <div class="modal-header border-0 p-0">
-          <h1 class="modal-title fw-semiBold fs-18" id="changePasswordModalLabel">تغییر رمز عبور</h1>
-          <button type="button" class="btn-close ms-0 me-auto fs-12" data-bs-dismiss="modal"
-            aria-label="Close"></button>
-        </div>
-        <div class="modal-body border-0 p-0">
-          <div class="fs-12 mt-2 text-gray5 fw-Medium successMessage">
-            <div class="d-flex align-items-center gap-2">
-              <img alt="icon" src="../../images/tick-circle.png">
-              <p class="mb-0">
-                شامل حداقل ۸ کاراکتر باشد.
-              </p>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <img alt="icon" src="../../images/tick-circle.png">
-              <p class="mb-0">
-                شامل حداقل یک عدد (۰-۹) باشد.
-              </p>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <img alt="icon" src="../../images/tick-circle.png">
-              <p class="mb-0">
-                شامل حداقل یک کاراکتر خاص مانند (!، @، #، $، %، &amp;) باشد.
-              </p>
-            </div>
-          </div>
-          <form class="mt-2" id="validationForm">
-            <div class="pb-1">
-              <label class="fs-14 fw-Medium text-muted2">رمز عبور جدید</label>
-              <div class="mt-1 position-relative inputBox">
-                <input id="passwordInput" type="password" placeholder="رمز عبور جدید را اینجا بنویسید"
-                  class="outline-none border rounded-8 w-100 p-2">
-                <div id="togglePassword" class="cursor-pointer position-absolute start-0 top-0 m-2 ms-3 first">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z">
-                    </path>
-                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0">
-                    </path>
-                  </svg>
-                </div>
-                <div class="cursor-pointer position-absolute left-25 top-0 m-2 ms-3 second">
-                  <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M8.00065 5.646V8.31266M8.00065 10.9793H8.00732M14.6673 8.31266C14.6673 11.9946 11.6826 14.9793 8.00065 14.9793C4.31875 14.9793 1.33398 11.9946 1.33398 8.31266C1.33398 4.63076 4.31875 1.646 8.00065 1.646C11.6826 1.646 14.6673 4.63076 14.6673 8.31266Z"
-                      stroke="#F04438" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                  <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.00065 8.31266L7.00065 10.3127L11.0007 6.31266M14.6673 8.31266C14.6673 11.9946 11.6826 14.9793 8.00065 14.9793C4.31875 14.9793 1.33398 11.9946 1.33398 8.31266C1.33398 4.63076 4.31875 1.646 8.00065 1.646C11.6826 1.646 14.6673 4.63076 14.6673 8.31266Z"
-                      stroke="#027A48" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div>
-                <div class="errors text-red2 fs-14">
-                  <p class="mb-0 mt-1" style="display: none;">باید حداقل ۸ کاراکتر باشد.</p>
-                  <p class="mb-0 mt-1" style="display: none;"> شامل حداقل یک عدد (۰-۹) باشد.</p>
-                  <p class="mb-0 mt-1" style="display: none;">شامل حداقل یک کاراکتر خاص مانند (!، @، #، $، %، &amp;)
-                    باشد.</p>
-                </div>
-              </div>
-            </div>
-            <div class="pb-1 mt-3">
-              <label class="fs-14 fw-Medium text-muted2">تکرار رمز عبور جدید</label>
-              <div class="mt-1 position-relative inputBox">
-                <input oninput="validatePasswords(this)" id="passwordInput2" type="password"
-                  placeholder="رمز عبور جدید را دوباره اینجا بنویسید" class="outline-none border rounded-8 w-100 p-2">
-                <div id="togglePassword2" class="cursor-pointer position-absolute start-0 top-0 m-2 ms-3 first">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z">
-                    </path>
-                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0">
-                    </path>
-                  </svg>
-                </div>
-                <div class="errors text-red2 fs-14">
-                  <p class="mb-0 mt-1 sameError" style="display: none;">رمز عبور با هم برابر نیست.</p>
-                </div>
-              </div>
-            </div>
-            <button id="submitBtn2"
-              class="rounded-8 cursor-pointer fw-semiBold text-center px-3 h-48 w-100 border-0 button d-flex align-items-center justify-content-center mt-5">
-              تایید
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- logout Modal -->
   <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
@@ -381,15 +283,6 @@
           </div>
           <div>
             <div class="flex-wrap d-flex align-items-center justify-content-xl-end gap-2">
-              <a data-bs-toggle="modal" data-bs-target="#changePasswordModal"
-                class="gray-hover bg-white d-flex align-items-center justify-content-center gap-2 border rounded-8 py-2 px-3 w-xs-100">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14.1673 8.33333V6.66667C14.1673 4.36548 12.3018 2.5 10.0007 2.5C7.69946 2.5 5.83398 4.36548 5.83398 6.66667V8.33333M10.0007 12.0833V13.75M7.33398 17.5H12.6673C14.0674 17.5 14.7675 17.5 15.3023 17.2275C15.7727 16.9878 16.1552 16.6054 16.3948 16.135C16.6673 15.6002 16.6673 14.9001 16.6673 13.5V12.3333C16.6673 10.9332 16.6673 10.2331 16.3948 9.69836C16.1552 9.22795 15.7727 8.8455 15.3023 8.60582C14.7675 8.33333 14.0674 8.33333 12.6673 8.33333H7.33398C5.93385 8.33333 5.23379 8.33333 4.69901 8.60582C4.2286 8.8455 3.84615 9.22795 3.60647 9.69836C3.33398 10.2331 3.33398 10.9332 3.33398 12.3333V13.5C3.33398 14.9001 3.33398 15.6002 3.60647 16.135C3.84615 16.6054 4.2286 16.9878 4.69901 17.2275C5.23379 17.5 5.93385 17.5 7.33398 17.5Z"
-                    stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <p class="mb-0 text-dark2 fw-semiBold">تغییر رمز عبور</p>
-              </a>
               <a data-bs-toggle="modal" data-bs-target="#sajamModal"
                 class="btnHover d-flex align-items-center justify-content-center gap-2 bg-green rounded-8 py-2 px-3 w-xs-100">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -486,7 +379,6 @@
 
   <script src="../../js/bootstrap.bundle.min.js"></script>
   <script src="../../js/sidebar.js"></script>
-  <script src="../../js/validateChangePassword.js"></script>
   <script src="../../js/validateProfile.js"></script>
   <script src="../../js/validatePhone.js"></script>
   <script src="../../js/validateOtp.js"></script>
