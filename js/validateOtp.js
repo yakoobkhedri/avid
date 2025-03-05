@@ -69,3 +69,7 @@ window.addEventListener('load' , function () {
         document.getElementById('firstOtp').disabled = false;
     })
 })
+
+document.getElementById('otpForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // جلوگیری از رفرش صفحه
+});
