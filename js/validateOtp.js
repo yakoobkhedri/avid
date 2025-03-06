@@ -71,5 +71,5 @@ window.addEventListener('load' , function () {
 })
 
 document.getElementById('otpForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // جلوگیری از رفرش صفحه
+    // event.preventDefault(); // جلوگیری از رفرش صفحه
 });

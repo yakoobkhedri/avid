@@ -14,6 +14,15 @@
 
 <body>
 
+   <!-- notification modal -->
+ <div class="active modal-box position-fixed w-100 h-100 px-3 overflow-auto bg-overlay z-1040 d-flex align-items-center justify-content-center">
+  <div class="bg-white max-w-350 mx-auto rounded-20 p-3 pt-0">
+    <img alt="logo" src="../../images/info-circle.png" class="d-block mx-auto mt-4 w-32 h-32">
+    <p class="font-700 text-green text-center mt-3 mb-0 fw-bold">سجام</p>
+    <p class="opacity-80 text-green2 text-center fs-14 mt-3 mb-4">کاربر گرامی جهت آغاز سرمایه گذاری یا سرمایه پذیری لطفا برای احراز هویت بر روی گزینه دریافت اطلاعات از سجام کلیک کنید و یا در صورت نداشتن حساب کاربری سجام از طریق وبسایت <a>sajam.ir</a> نسبت به ایجاد حساب کاربری خود اقدام نمایید و بعد از نهایی شدن مجدد اقدام کنید.</p>
+    <button id="closeAuthModal" type="button" class="text-white d-block w-100 border-0 bg-green fs-14 font-600 h-51 rounded-10 text-center">متوجه شدم</button>
+  </div>
+</div>
 
   <!-- logout Modal -->
   <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
@@ -365,6 +374,7 @@
   <script src="../../js/sidebar.js"></script>
   <script src="../../js/validateOtp.js"></script>
   <script src="../../js/sajam.js"></script>
+  <script src="../../js/modal.js"></script>
 </body>
 
 </html>
